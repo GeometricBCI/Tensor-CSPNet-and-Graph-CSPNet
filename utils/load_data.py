@@ -22,20 +22,18 @@ import torch as th
 #import pyriemann
 from pyriemann.estimation import Covariances
 
-
-
+'''
+This Class FilterBank is from https://github.com/ravikiran-mane/FBCNet
+'''
 class FilterBank:
-'''
-This class is from https://github.com/ravikiran-mane/FBCNet
-'''
     def __init__(self, fs, pass_width=4, f_width=4):
-        self.fs = fs
-        self.f_trans = 2
-        self.f_pass = np.arange(4, 40, pass_width)
-        self.f_width = f_width
-        self.gpass = 3
-        self.gstop = 30
-        self.filter_coeff={}
+        self.fs           = fs
+        self.f_trans      = 2
+        self.f_pass       = np.arange(4, 40, pass_width)
+        self.f_width      = f_width
+        self.gpass        = 3
+        self.gstop        = 30
+        self.filter_coeff = {}
 
     def get_filter_coeff(self):
         Nyquist_freq = self.fs/2
