@@ -1,5 +1,5 @@
 # Tensor-CSPNet-and-Graph-CSPNet
-In these works, I propose two motor imagery-electroencephalography classifier using geometric deep learning on symmetric positive definite manifolds. Thanks for geometers' great contributions in modern geometry and engineering disciplins.  
+In these works, I propose two motor imagery-electroencephalography classifiers using geometric deep learning on symmetric positive definite manifolds. We call these classes of approaches geometric methods. Thanks for geometers' great contributions in modern geometry and engineering disciplins so that we can formulate the world in a geometric perspective. 
 
 
 Introduction
@@ -24,3 +24,16 @@ https://ieeexplore.ieee.org/document/9805775
             doi={10.1109/TNNLS.2022.3172108}
           }
 2. Graph-CSPNet: Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
+
+
+Architecture 
+------------
+
+The mainstream of an effective MI-EEG classifier will exploit information from the time, spatial, and frequency domain. For spatial information, they both use BiMap-structure as the BiMap transofrmation in the CSP methods. For temporal and frequency information, their architectures vary on two approaches. Tensor-CSPNet uses CNNs for capturing the temporal dynamics, while Graph-CSPNet uses graph-based techniques for capturing information behind the time-frequency domains. 
+
+
+Performance
+------------
+
+
+
