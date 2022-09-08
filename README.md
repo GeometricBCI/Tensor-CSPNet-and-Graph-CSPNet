@@ -1,5 +1,6 @@
 # Tensor-CSPNet-and-Graph-CSPNet
-In these works, I propose two motor imagery-electroencephalography classifiers using geometric deep learning on symmetric positive definite manifolds. We call these classes of approaches geometric methods. Thanks for geometers' great contributions in modern geometry and engineering disciplins so that we can formulate the world in a geometric perspective. 
+
+In this repository, I implement two motor imagery-electroencephalography classifiers using geometric deep learning on symmetric positive definite manifolds. We call these classes of approaches geometric methods. Thanks for geometers' great contributions in modern geometry and engineering disciplins so that we can formulate the world in a geometric perspective. 
 
 
 Introduction
