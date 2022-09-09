@@ -13,7 +13,7 @@ This is the python implementation of Tensor-CSPNet and Graph-CSPNet.
 https://ieeexplore.ieee.org/document/9805775
 
 
-    If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in references and cite.
+    If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in references and cite. It is now early accessed in IEEE TNNLS.
     
     ~~~~~~~~
         @ARTICLE{9805775,
