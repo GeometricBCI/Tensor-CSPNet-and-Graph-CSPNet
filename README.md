@@ -28,13 +28,10 @@ This is the python implementation of Tensor-CSPNet and Graph-CSPNet.
 2. Graph-CSPNet: Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
 
 
-## Architecture 
+## Architecture and Usage
 
 The mainstream of an effective MI-EEG classifier will exploit information from the time, spatial, and frequency domain. For spatial information, they both use BiMap-structure as the BiMap transofrmation in the CSP methods. For temporal and frequency information, their architectures vary on two approaches. Tensor-CSPNet uses CNNs for capturing the temporal dynamics, while Graph-CSPNet uses graph-based techniques for capturing information behind the time-frequency domains. 
 
-
-
-## Usage
 We provide the models under `/utils/model/` inside there we have 9 subdirectories `/S1` to `/S9` each representing each subject. Inside each subdirectory there are 6 files. `model.h5` is the saved keras model of variable EEG-TCNet and `model_fixed.h5` is the saved keras model of fixed EEG-TCNet. Then there are two pipeline files in each subdirectory which vary depending on if data normalization was used or not. Please refer to  `Accuracy_and_kappa_scores.ipynb` in the main directory to see how these pipelines are produces. There you also find the accuracy score and kappa score verification of EEG-TCNet.
 
 Under `/utils` you find the data loading and model making files. Then also a small sample of how to train is given with `sample_train.py`, please note that because of the stochastic nature of training with GPUs it's very hard to fix every random variable in the backend. Therefore to reproduce the same or similar models one might need to train a couple of times in order to get the same highly accurate models we present.
