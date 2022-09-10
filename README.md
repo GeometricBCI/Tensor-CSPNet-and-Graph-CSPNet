@@ -2,7 +2,7 @@
 
 In this repository, I implement two motor imagery-electroencephalography classifiers using geometric deep learning on symmetric positive definite manifolds. In essence, it is a deep learning-based MI-EEG classifier on the second-order statistics of EEG signals. 
 
-We would like to call these classes of approaches geometric methods. Thanks for geometers' great contributions in modern geometry and engineering disciplins so that we can formulate the world in a geometric perspective. 
+We would like to call these novel classes of approaches geometric methods. Thanks for geometers' great contributions in modern geometry and engineering disciplins so that we can formulate the world in a geometric perspective. 
 
 
 ## Introduction
