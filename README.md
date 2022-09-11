@@ -1,15 +1,15 @@
 # Tensor-CSPNet-and-Graph-CSPNet
 
-In this repository, We implement two motor imagery-electroencephalography classifiers using geometric deep learning on symmetric positive definite manifolds. In essence, it is a deep learning-based MI-EEG classifier on the second-order statistics of EEG signals. In contrast to the first-order statistics, using these second-order statistics is the classical treatment, and the discriminative information contained in these second-order statistics is adequate for MI-EEG classification. 
+In this repository, I implement two motor imagery-electroencephalography classifiers using geometric deep learning on symmetric positive definite manifolds. In essence, it is a deep learning-based MI-EEG classifier on the second-order statistics of EEG signals. In contrast to the first-order statistics, using these second-order statistics is the classical treatment, and the discriminative information contained in these second-order statistics is adequate for MI-EEG classification. 
 
-We would like to call this novel class of approaches the geometric method. Thanks for [**geometers'**](https://en.wikipedia.org/wiki/List_of_geometers) great contributions in modern geometry and engineering disciplins so that we can formulate the world in a geometric perspective. 
+I would like to call this novel class of approaches the geometric method. Thanks for [**geometers'**](https://en.wikipedia.org/wiki/List_of_geometers) great contributions in modern geometry and engineering disciplins so that we can formulate the world in a geometric perspective. 
 
 
 ## Introduction
 
 This is the python implementation of Tensor-CSPNet and Graph-CSPNet.
 
-1. Tensor-CSPNet: Tensor-CSPNet is the first geometric deep learning approach for the motor imagery-electroencephalography classification. It exploits the patterns from the time, spatial, and frequency domains sequentially. This is implementation of our paper [**Tensor-CSPNet: A Novel Geometric Deep Learning Framework for Motor Imagery Classification**](https://ieeexplore.ieee.org/document/9805775) accepted by IEEE Transactions on Neural Networks and Learning Systems (IEEE TNNLS). 
+1. Tensor-CSPNet: Tensor-CSPNet is the first geometric deep learning approach for the motor imagery-electroencephalography classification. It exploits the patterns from the time, spatial, and frequency domains sequentially. This is implementation of my paper [**Tensor-CSPNet: A Novel Geometric Deep Learning Framework for Motor Imagery Classification**](https://ieeexplore.ieee.org/document/9805775) accepted by IEEE Transactions on Neural Networks and Learning Systems (IEEE TNNLS). 
 
 
     If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in references and cite. It is now early accessed in IEEE TNNLS.
@@ -46,9 +46,9 @@ This is the python implementation of Tensor-CSPNet and Graph-CSPNet.
 
 The mainstream of an effective MI-EEG classifier will exploit information from the time, spatial, and frequency domain. For spatial information, they both use BiMap-structure as the BiMap transofrmation in the CSP methods. For temporal and frequency information, their architectures vary on two approaches. Tensor-CSPNet uses CNNs for capturing the temporal dynamics, while Graph-CSPNet uses graph-based techniques for capturing information behind the time-frequency domains. 
 
-We provide the models under `/utils/model/` inside there we have Tensor-CSPNet and Graph-CSPNet. The modules of two models can be found in `/utils/modules/`. There are two scenarios, i.e., cross-validation and holdout, in the experiments. A cross-validation index subdivisions are put in the `/utils/index`. I also wrote all of training files for two scenarios, two algorithms, and two datasets in both .py and .ipynb files in `/utils/train_files/`. Please put your downloaded data into folder `/utils/dataset`, and then train and test your model. 
+I provide the models under `/utils/model/` inside there we have Tensor-CSPNet and Graph-CSPNet. The modules of two models can be found in `/utils/modules/`. There are two scenarios, i.e., cross-validation and holdout, in the experiments. A cross-validation index subdivisions are put in the `/utils/index`. I also wrote all of training files for two scenarios, two algorithms, and two datasets in both .py and .ipynb files in `/utils/train_files/`. Please put your downloaded data into folder `/utils/dataset`, and then train and test your model. 
 
-Keep in mind that with the given network architecture, trainning parameters, and training-test indecies in the folder, Tensor-CSPNet and Graph-CSPNet should achieve around 76% on the CV scenario and around 72% on the holdout scenario on the BCIC-IV-2a dataset, and around 73% on the CV scenario and around 69% on the holdout scenario on the KU dataset using my local computer. It is normal to have a bit of randomness in each run. Please try more combinations (signal segmentaion, tranning parameters, etc.) for a better performance in each scenario. Both Tensor-CSPNet and Graph-CSPNet use matrix backpropagation for updating weights, which runs a little slower in each epoch than that of typical CNNs. 
+Keep in mind that with the given network architecture, trainning parameters, and training-test indecies in the folder, Tensor-CSPNet and Graph-CSPNet should achieve around 76% on the CV scenario and around 72% on the holdout scenario on the BCIC-IV-2a dataset, and around 73% on the CV scenario and around 69% on the holdout scenario on the KU dataset using my local computer with CPU. It is normal to have a bit of randomness in each run. Please try more combinations (EEG signal segmentaion, tranning parameters, etc.) for a better performance in each scenario. Both Tensor-CSPNet and Graph-CSPNet use matrix backpropagation for updating weights, which runs a little slower in each epoch than that of typical CNNs, but 50 epochs in total yield a relatively good performance.  
 
 
 ### Related Repositories
