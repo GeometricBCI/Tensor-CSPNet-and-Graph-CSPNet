@@ -42,7 +42,7 @@ This is the python implementation of Tensor-CSPNet and Graph-CSPNet.
           }
 
 
-## Architecture and Usage
+## Usages
 
 The mainstream of an effective MI-EEG classifier will exploit information from the time, spatial, and frequency domain. For spatial information, they both use BiMap-structure as the BiMap transofrmation in the CSP methods. For temporal and frequency information, their architectures vary on two approaches. Tensor-CSPNet uses CNNs for capturing the temporal dynamics, while Graph-CSPNet uses graph-based techniques for capturing information behind the time-frequency domains. 
 
