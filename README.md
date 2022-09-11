@@ -48,6 +48,8 @@ The mainstream of an effective MI-EEG classifier will exploit information from t
 
 We provide the models under `/utils/model/` inside there we have Tensor-CSPNet and Graph-CSPNet. The modules of two models can be found in `/utils/modules/`. There are two scenarios, i.e., cross-validation and holdout, in the experiments. A cross-validation index subdivisions are put in the `/utils/index`. I also wrote all of training files for two scenarios, two algorithms, and two datasets in both .py and .ipynb files in `/utils/train_files/`. Please put your downloaded data into folder `/utils/dataset`, and then train and test your model. 
 
+Keep in mind that with the given network architecture, trainning parameters, and data indecies in the folder, Tensor-CSPNet and Graph-CSPNet should achieve around 76% on the CV scenario and around 72% on the holdout scenario on the BCIC-IV-2a dataset, and around 73% on the CV scenario and around 69% on the holdout scenario on the KU dataset. It is normal to have a bit of randomness in each run. Please try more combinations for better performance in each scenario. 
+
 
 ### Related Repositories
 
