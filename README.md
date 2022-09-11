@@ -1,4 +1,4 @@
-# Tensor-CSPNet-and-Graph-CSPNet
+# Tensor-CSPNet and Graph-CSPNet
 
 In this repository, I implement two motor imagery-electroencephalography classifiers using geometric deep learning on symmetric positive definite manifolds. In essence, it is a deep learning-based MI-EEG classifier on the second-order statistics of EEG signals. In contrast to first-order statistics, using these second-order statistics is the classical treatment, and the discriminative information contained in these second-order statistics is adequate for MI-EEG classification.
 
@@ -65,7 +65,7 @@ We list the repositories of several modules of our model and baseslines in the e
 + torchspdnet:https://gitlab.lip6.fr/schwander/torchspdnet
 + geoopt:https://github.com/geoopt/geoopt
 
-### Dataset Availability
+### Data Availability
 
 The KU dataset (a.k.a., the OpenBMI dataset) can be downloaded in the following link:
 [**GIGADB**](http://gigadb.org/dataset/100542)
