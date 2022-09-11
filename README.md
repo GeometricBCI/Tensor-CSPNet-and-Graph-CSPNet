@@ -1,6 +1,6 @@
 # Tensor-CSPNet-and-Graph-CSPNet
 
-In this repository, I implement two motor imagery-electroencephalography classifiers using geometric deep learning on symmetric positive definite manifolds. In essence, it is a deep learning-based MI-EEG classifier on the second-order statistics of EEG signals. 
+In this repository, I implement two motor imagery-electroencephalography classifiers using geometric deep learning on symmetric positive definite manifolds. In essence, it is a deep learning-based MI-EEG classifier on the second-order statistics of EEG signals. In contrast to the first-order statistics, using these second-order statistics is the classical treatment, and the discriminative information contained in these second-order statistics is adequate for MI-EEG classification. 
 
 I would like to call this novel class of approaches the geometric method. Thanks for [**geometers'**](https://en.wikipedia.org/wiki/List_of_geometers) great contributions in modern geometry and engineering disciplins so that we can formulate the world in a geometric perspective. 
 
