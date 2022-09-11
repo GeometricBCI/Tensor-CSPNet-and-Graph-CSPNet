@@ -1,8 +1,8 @@
 # Tensor-CSPNet-and-Graph-CSPNet
 
-In this repository, I implement two motor imagery-electroencephalography classifiers using geometric deep learning on symmetric positive definite manifolds. In essence, it is a deep learning-based MI-EEG classifier on the second-order statistics of EEG signals. In contrast to the first-order statistics, using these second-order statistics is the classical treatment, and the discriminative information contained in these second-order statistics is adequate for MI-EEG classification. 
+In this repository, We implement two motor imagery-electroencephalography classifiers using geometric deep learning on symmetric positive definite manifolds. In essence, it is a deep learning-based MI-EEG classifier on the second-order statistics of EEG signals. In contrast to the first-order statistics, using these second-order statistics is the classical treatment, and the discriminative information contained in these second-order statistics is adequate for MI-EEG classification. 
 
-I would like to call this novel class of approaches the geometric method. Thanks for [**geometers'**](https://en.wikipedia.org/wiki/List_of_geometers) great contributions in modern geometry and engineering disciplins so that we can formulate the world in a geometric perspective. 
+We would like to call this novel class of approaches the geometric method. Thanks for [**geometers'**](https://en.wikipedia.org/wiki/List_of_geometers) great contributions in modern geometry and engineering disciplins so that we can formulate the world in a geometric perspective. 
 
 
 ## Introduction
@@ -74,5 +74,6 @@ The BCIC-IV-2a dataset can be downloaded in the following link:
 with the dataset discription [**BCI Competition 2008 – Graz data set A**](https://www.bbci.de/competition/iv/desc_2a.pdf) and the introduction to [**the BCI competition**](https://www.bbci.de/competition/iv/).
 
 ### License and Attribution
+
 Please refer to the LICENSE file for the licensing of our code.
 
