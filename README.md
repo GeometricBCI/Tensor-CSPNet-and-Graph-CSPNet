@@ -37,6 +37,28 @@ We provide the models under `/utils/model/` inside there we have 9 subdirectorie
 Under `/utils` you find the data loading and model making files. Then also a small sample of how to train is given with `sample_train.py`, please note that because of the stochastic nature of training with GPUs it's very hard to fix every random variable in the backend. Therefore to reproduce the same or similar models one might need to train a couple of times in order to get the same highly accurate models we present.
 
 
+### Related Repositoroes
+
+We list the repositoires of several modules of our model and baseslines in the experiments as follows, 
+
++ FBCSP:https://fbcsptoolbox.github.io/
++ FBCNet:https://github.com/ravikiran-mane/FBCNet
++ EEGNet:https://github.com/vlawhern/arl-eegmodels
++ pyRiemann:https://github.com/pyRiemann/pyRiemann
++ SPDNet:https://github.com/zhiwu-huang/SPDNet
++ torchspdnet:https://gitlab.lip6.fr/schwander/torchspdnet
++ geoopt:https://github.com/geoopt/geoopt
+
+### Dataset Availability
+
+KU Dataset (a.k.a OpenBMI dataset) can be downloaded in the following link:
+http://gigadb.org/dataset/100542
+with the dataset discription [**EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy**](https://academic.oup.com/gigascience/article/8/5/giz002/5304369).
+
+BCIC-IV-2a can be downloaded in the following link:
+[**BNCI-Horizon-2020**](http://bnci-horizon-2020.eu/database/data-sets)
+with the dataset discription [**BCI Competition 2008 – Graz data set A**](https://www.bbci.de/competition/iv/desc_2a.pdf) and the introduction to [**the BCI competition**](https://www.bbci.de/competition/iv/).
+
 ### License and Attribution
 Please refer to the LICENSE file for the licensing of our code.
 
