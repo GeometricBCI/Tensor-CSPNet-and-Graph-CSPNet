@@ -51,8 +51,8 @@ We list the repositoires of several modules of our model and baseslines in the e
 
 ### Dataset Availability
 
-KU Dataset (a.k.a OpenBMI dataset) can be downloaded in the following link:
-http://gigadb.org/dataset/100542
+KU Dataset (a.k.a., OpenBMI dataset) can be downloaded in the following link:
+[**GIGADB**](http://gigadb.org/dataset/100542)
 with the dataset discription [**EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy**](https://academic.oup.com/gigascience/article/8/5/giz002/5304369).
 
 BCIC-IV-2a can be downloaded in the following link:
