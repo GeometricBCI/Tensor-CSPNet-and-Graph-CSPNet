@@ -1,4 +1,3 @@
-This is the training file (.py and .ipynb) for both methods on two secnarios and datasets. 
+This is the training file (.py and .ipynb) for both methods on two scenarios and datasets. 
 
-I have tested several runs using .ipynb files with the given network and training parameters and strategies. The results looks very closed to the reported ones. 
-Please try a slightly modified hyperparameters to adapt your device if you cannot reproduce them. 
+I have tested several runs using .ipynb files with the given network and training parameters and strategies. The results look very close to the reported ones. Please try slightly modified hyperparameters to adapt your device if you cannot reproduce them. 
