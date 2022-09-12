@@ -29,6 +29,7 @@ The mainstream of an effective MI-EEG classifier will exploit information from t
 
 Tensor-CSPNet is the first geometric deep learning approach for the motor imagery-electroencephalography classification. It exploits the patterns from the time, spatial, and frequency domains sequentially. This is implementation of my paper [**Tensor-CSPNet: A Novel Geometric Deep Learning Framework for Motor Imagery Classification**](https://ieeexplore.ieee.org/document/9805775) accepted by IEEE Transactions on Neural Networks and Learning Systems (IEEE TNNLS). 
 
+![Illustration of Tensor-CSPNet](img/TCSPNET-eps-converted-to.pdf)
 
     If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in references and cite. It is now early accessed in IEEE TNNLS.
     
@@ -46,9 +47,6 @@ Tensor-CSPNet is the first geometric deep learning approach for the motor imager
 ### Graph-CSPNet
 
 Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
-
-![My Image](/img/TCSPNET-eps-converted-to.pdf)
-
 
     If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. It has been submitted. 
     
