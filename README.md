@@ -1,4 +1,4 @@
-I would like to call the following novel direction the geometric method. Thanks for the geometers' great contributions so that we can formulate the world from a geometric perspective. I am also thankful for their great contributions in engineering disciplines, including geometric control theory, Riemannian optimization, geometric statistics, etc.
+I would like to call the following novel direction the geometric method in MI-EEG classification. Thanks for the geometers' great contributions so that we can formulate the world from a geometric perspective. I am also thankful for their great contributions in engineering disciplines, including geometric control theory, Riemannian optimization, geometric statistics, etc.
 
 # Geometric Method: Tensor-CSPNet and Graph-CSPNet
 
