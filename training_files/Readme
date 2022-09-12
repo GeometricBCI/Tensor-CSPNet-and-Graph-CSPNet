@@ -9,4 +9,4 @@ There are several training strategies probably helpful to follow:
 3. The epoch of each run should be over 50. So, don't use the early stopping in some scenarios.
 ...
 
-Keep in mind that the reported results are the best that we achieve, rather than an average of many runs'. 
+Keep in mind that the reported results are the best that I achieve, rather than an average of many runs'. 
