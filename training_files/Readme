@@ -5,5 +5,5 @@ Keep in mind that the reported results are the best that I achieve, rather than 
 hyperparameters to adapt your device if you cannot reproduce them. There are several training strategies probably helpful to follow:
 1. Set the learning rate = 1e-3.
 2. Pick a small batch size. I prefer to let the number equal the size of the testing trials.
-3. The epoch of each run should be over 50. So, don't use the early stopping in some scenarios.
+3. The epoch of each run should be over 50 in either scenarios. So, don't use the early stopping in some scenarios.
 ...
