@@ -9,7 +9,7 @@ In this repository, I implement two motor imagery-electroencephalography (MI-EEG
 
 ## Introduction
 
-This is the python implementation of Tensor-CSPNet and Graph-CSPNet.
+The mainstream of an effective MI-EEG classifier will exploit information from the time, spatial, and frequency domains. For spatial information, they both use BiMap-structure as the BiMap transformation in the CSP methods. For temporal and frequency information, their architectures vary in two approaches. Tensor-CSPNet uses CNNs for capturing the temporal dynamics, while Graph-CSPNet uses graph-based techniques for capturing information behind the time-frequency domains. 
 
 1. Tensor-CSPNet: Tensor-CSPNet is the first geometric deep learning approach for the motor imagery-electroencephalography classification. It exploits the patterns from the time, spatial, and frequency domains sequentially. This is implementation of my paper [**Tensor-CSPNet: A Novel Geometric Deep Learning Framework for Motor Imagery Classification**](https://ieeexplore.ieee.org/document/9805775) accepted by IEEE Transactions on Neural Networks and Learning Systems (IEEE TNNLS). 
 
@@ -45,8 +45,6 @@ This is the python implementation of Tensor-CSPNet and Graph-CSPNet.
 
 
 ## Usages
-
-The mainstream of an effective MI-EEG classifier will exploit information from the time, spatial, and frequency domains. For spatial information, they both use BiMap-structure as the BiMap transformation in the CSP methods. For temporal and frequency information, their architectures vary in two approaches. Tensor-CSPNet uses CNNs for capturing the temporal dynamics, while Graph-CSPNet uses graph-based techniques for capturing information behind the time-frequency domains. 
 
 I provide the models under `/utils/model` inside there we have Tensor-CSPNet and Graph-CSPNet. The modules of the two models can be found in `/utils/modules`. There are two scenarios, i.e., cross-validation and holdout, in the experiments. A cross-validation index subdivisions are put in the `/index`. I also wrote all of the training files for two scenarios, two algorithms, and two datasets in both .py and .ipynb files in `/train_files/`. Please put your downloaded data into folder `/dataset`, and then train and test your model. 
 
