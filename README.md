@@ -47,6 +47,9 @@ Tensor-CSPNet is the first geometric deep learning approach for the motor imager
 
 Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
 
+![My Image](/img/TCSPNET-eps-converted-to.pdf)
+
+
     If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. It has been submitted. 
     
     ~~~~~~~~
