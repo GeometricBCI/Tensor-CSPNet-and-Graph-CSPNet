@@ -9,9 +9,25 @@ In this repository, I implement two motor imagery-electroencephalography (MI-EEG
 
 ## Introduction
 
-The mainstream of an effective MI-EEG classifier will exploit information from the time, spatial, and frequency domains. For spatial information, they both use BiMap-structure as the BiMap transformation in the CSP methods. For temporal and frequency information, their architectures vary in two approaches. Tensor-CSPNet uses CNNs for capturing the temporal dynamics, while Graph-CSPNet uses graph-based techniques for capturing information behind the time-frequency domains. 
+The mainstream of an effective MI-EEG classifier will exploit information from the time, spatial, and frequency domains. For spatial information, they both use BiMap-structure as the BiMap transformation in the CSP methods. For temporal and frequency information, their architectures vary in two approaches. Tensor-CSPNet uses CNNs for capturing the temporal dynamics, while Graph-CSPNet uses graph-based techniques for capturing information behind the time-frequency domains. In the following table, we have a detailed comparision of two methods. 
 
-1. Tensor-CSPNet: Tensor-CSPNet is the first geometric deep learning approach for the motor imagery-electroencephalography classification. It exploits the patterns from the time, spatial, and frequency domains sequentially. This is implementation of my paper [**Tensor-CSPNet: A Novel Geometric Deep Learning Framework for Motor Imagery Classification**](https://ieeexplore.ieee.org/document/9805775) accepted by IEEE Transactions on Neural Networks and Learning Systems (IEEE TNNLS). 
+
+
+| Geometric Methods     | Tensor-CSPNet       |Graph-CSPNet   |
+| ---------------------- | ------------- | ------------- |
+| 1.Network Input:          | Tensorized Spatial Covariance Matrices         | Time-frequency Graph  |
+| 2.Architecture:           | Mixed Geometric Deep Learning:         | Geometric Deep Learning:  |
+|                        | BiMaps; CNNs                           | Graph-BiMaps |
+| 3.Optimizer:             | Riemannian (Adaptive) Optimization     | Riemannian (Adaptive) Optimization|
+|4.Underlying Space:|SPD Manifolds| SPD Manifolds|
+|5.Heritage:|Common Spatial Patterns|Common Spatial Patterns; Riemannian-based Approaches|
+|6.Principle:|The Time-Space-Frequency Principle: Exploitation in the frequency, space, and time domains sequentially.|The Time-Space-Frequency Principle: Exploitation in the time-frequency domain simultaneously, and then in the space domain.|
+|7.Mechanism:|Trainable-parameter CNNs for temporal dynamics|Preset graph weights in spectral clustering for time-frequency distributions|
+   
+
+### Tensor-CSPNet
+
+Tensor-CSPNet is the first geometric deep learning approach for the motor imagery-electroencephalography classification. It exploits the patterns from the time, spatial, and frequency domains sequentially. This is implementation of my paper [**Tensor-CSPNet: A Novel Geometric Deep Learning Framework for Motor Imagery Classification**](https://ieeexplore.ieee.org/document/9805775) accepted by IEEE Transactions on Neural Networks and Learning Systems (IEEE TNNLS). 
 
 
     If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in references and cite. It is now early accessed in IEEE TNNLS.
@@ -27,7 +43,9 @@ The mainstream of an effective MI-EEG classifier will exploit information from t
             pages={1-15},
             doi={10.1109/TNNLS.2022.3172108}
           }
-2. Graph-CSPNet: Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
+### Graph-CSPNet
+
+Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
 
     If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. It has been submitted. 
     
