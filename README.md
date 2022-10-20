@@ -1,4 +1,4 @@
-I would like to call the following novel direction the geometric method in motor imagery-electroencephalography (MI-EEG) classification. Thanks for the geometers' great contributions in engineering disciplines, including geometric control theory, Riemannian optimization, information geometry, geometric statistics, etc.
+I would like to call the following novel direction the geometric method in motor imagery-electroencephalography (MI-EEG) classification. Thanks for the geometers' great contributions in engineering disciplines, including those scholars involving in Riemannian optimization, information geometry, geometric control theory, etc.
 
 # Tensor-CSPNet and Graph-CSPNet
 
