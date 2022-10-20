@@ -49,6 +49,7 @@ If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in refere
 
 Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
 
+![Illustration of Graph-CSPNet](img/graph_CSPNet.png)
 
     If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. It has been submitted. 
     
