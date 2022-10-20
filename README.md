@@ -5,8 +5,6 @@ I would like to call the following novel direction the geometric method in motor
 In this repository, I implement two MI-EEG classifiers using geometric deep learning on symmetric positive definite manifolds. In essence, it is a deep learning-based MI-EEG classifier on the second-order statistics of EEG signals. In contrast to first-order statistics, using these second-order statistics is the classical treatment in MI-EEG classification, and the discriminative information contained in these second-order statistics is adequate for classification.
 
 
-
-
 ## Introduction
 
 The mainstream of an effective MI-EEG classifier will exploit information from the time, spatial, and frequency domains. For spatial information, they both use BiMap-structure as the BiMap transformation in the CSP methods. For temporal and frequency information, their architectures vary in two approaches. Tensor-CSPNet uses CNNs for capturing the temporal dynamics, while Graph-CSPNet uses graph-based techniques for capturing information behind the time-frequency domains. In the following table, we have a detailed comparision of two methods. 
@@ -27,8 +25,8 @@ The mainstream of an effective MI-EEG classifier will exploit information from t
 
 ### Tensor-CSPNet
 
-[<img src="https://img.shields.io/badge/arXiv-2202.02472-b31b1b"></img>](https://arxiv.org/abs/2202.02472)
 [<img src="https://img.shields.io/badge/IEEE-9805775-b31b1b"></img>](https://ieeexplore.ieee.org/document/9805775)
+[<img src="https://img.shields.io/badge/arXiv-2202.02472-b31b1b"></img>](https://arxiv.org/abs/2202.02472)
 
 Tensor-CSPNet is the first geometric deep learning approach for the motor imagery-electroencephalography classification. It exploits the patterns from the time, spatial, and frequency domains sequentially. This is implementation of my paper [**Tensor-CSPNet: A Novel Geometric Deep Learning Framework for Motor Imagery Classification**](https://ieeexplore.ieee.org/document/9805775) accepted by IEEE Transactions on Neural Networks and Learning Systems (IEEE TNNLS). 
 
@@ -87,6 +85,12 @@ We list the repositories of related python packages and baseslines as follows,
 + SPDNet:https://github.com/zhiwu-huang/SPDNet
 + torchspdnet:https://gitlab.lip6.fr/schwander/torchspdnet
 + geoopt:https://github.com/geoopt/geoopt
++ TSMNet:https://github.com/rkobler/TSMNet
+
+### Related Papers
+
++SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG
+
 
 ### Data Availability
 
