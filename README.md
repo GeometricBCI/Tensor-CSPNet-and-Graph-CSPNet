@@ -95,9 +95,7 @@ We list the repositories of related python packages as follows: [<img src="https
 
 The KU dataset (a.k.a., the OpenBMI dataset) can be downloaded in the following link:
 [**GIGADB**](http://gigadb.org/dataset/100542)
-with the dataset discription [**EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy**](https://academic.oup.com/gigascience/article/8/5/giz002/5304369).
-
-The BCIC-IV-2a dataset can be downloaded in the following link:
+with the dataset discription [**EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy**](https://academic.oup.com/gigascience/article/8/5/giz002/5304369); The BCIC-IV-2a dataset can be downloaded in the following link:
 [**BNCI-Horizon-2020**](http://bnci-horizon-2020.eu/database/data-sets)
 with the dataset discription [**BCI Competition 2008 – Graz data set A**](https://www.bbci.de/competition/iv/desc_2a.pdf) and the introduction to [**the BCI competition**](https://www.bbci.de/competition/iv/).
 
