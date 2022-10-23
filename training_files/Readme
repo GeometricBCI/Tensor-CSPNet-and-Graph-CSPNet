@@ -1,9 +1,0 @@
-This is the training file (.py file) for both methods on two scenarios and datasets. 
-
-I have tested several runs with the given network and training parameters and strategies. The results look very close to the reported ones.
-Keep in mind that the reported results are the best that I achieve, rather than an average of many runs'. Please try slightly modified 
-hyperparameters to adapt your device if you cannot reproduce them. There are several training strategies probably helpful to follow:
-1. Set the learning rate = 1e-3.
-2. Pick a small batch size. I prefer to let the number equal the size of the testing trials.
-3. The epoch of each run should be over 50 in either scenario. So, don't always use the early stopping.
-...
