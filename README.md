@@ -82,10 +82,12 @@ We list the repositories of related python packages and baseslines as follows,
 + geoopt:https://github.com/geoopt/geoopt
 + TSMNet:https://github.com/rkobler/TSMNet
 
-### Timeline
+### Timeline of Related Works
 
 #### Before 2020
-Poineers 
+
+Great thanks to poineers including Xavier Pennec, Alexandre Barachant, Marco Congedo, Zhiwu Huang, et al. for their great contributions in developing the fundamental tools and perspectives for this path. 
+
 #### 2020
 C. Ju, D. Gao, R. Mane, B. Tan, Y. Liu and C. Guan, "Federated Transfer Learning for EEG Signal Classification," 2020 42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC), 2020, pp. 3040-3045, doi: 10.1109/EMBC44109.2020.9175344.
 #### 2022
