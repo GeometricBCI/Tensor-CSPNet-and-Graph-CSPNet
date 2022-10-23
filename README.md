@@ -96,7 +96,7 @@ Great thanks to poineers in SPD manifolds and Riemannian-based classifiers in BC
 3. R. J. Kobler, J.-i. Hirayama, and M. Kawanabe, “Controlling the fréchet variance improves batch normalization on the symmetric positive definite manifold,” in ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2022, pp. 3863–3867.
 4. R. J. Kobler, J.-i. Hirayama, Q. Zhao, and M. Kawanabe, "SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG," accepted by NeurIPS2022. 
 5. Y.-T.Pan,J.-L.Chou,andC.-S.Wei,“Matt:Amanifoldattentionnetwork for eeg decoding,” accpeted by NeurIPS2022.
-...
+6. ...
 
 ### Data Availability
 
