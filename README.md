@@ -69,16 +69,6 @@ Keep in mind that with the given network architecture, training parameters, and 
 
 There are two kinds of optimizers that we provide in this folder. One is called Class MixOptimizer given in `/utils/functional`; The other is from the python package geoopt. In the implementation, I found the best classification performance is initialized parameters from the BiMap layer with nn.Parameter and parameters from Riemannian Batch Normalization with geoopt.ManifoldParameter(..., manifold=geoopt.SymmetricPositiveDefinite()) using Riemannian adaptive optimizer in geoopt for our experiments. This might not always be right in other tasks.   
 
-### Related Repositories
-
-We list the repositories of related python packages and baseslines as follows, 
-
-+ FBCSP:[<img src="https://img.shields.io/badge/GitHub-FBCSP-b31b1b"></img>](https://fbcsptoolbox.github.io/)
-+ FBCNet:[<img src="https://img.shields.io/badge/GitHub-FBCNet-b31b1b"></img>](https://github.com/ravikiran-mane/FBCNet)
-+ pyRiemann:[<img src="https://img.shields.io/badge/GitHub-pyRiemann-b31b1b"></img>](https://github.com/pyRiemann/pyRiemann)
-+ SPDNet:[<img src="https://img.shields.io/badge/GitHub-SPDNet(Z.W.Huang)-b31b1b"></img>](https://github.com/zhiwu-huang/SPDNet)[<img src="https://img.shields.io/badge/GitHub-SPDNet(Lip6)-b31b1b"></img>](https://gitlab.lip6.fr/schwander/torchspdnet)
-+ geoopt:[<img src="https://img.shields.io/badge/GitHub-geoopt-b31b1b"></img>](https://github.com/geoopt/geoopt)
-
 
 ### Timeline of Related Works
 
@@ -95,6 +85,17 @@ Great thanks to poineers in SPD manifolds and Riemannian-based classifiers in BC
 4. R. J. Kobler, J.-i. Hirayama, Q. Zhao, and M. Kawanabe, "SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG," accepted by NeurIPS2022. [<img src="https://img.shields.io/badge/GitHub-TSMNet-b31b1b"></img>](https://github.com/rkobler/TSMNet)
 5. Y.-T.Pan,J.-L.Chou,andC.-S.Wei, “Matt:Amanifoldattentionnetwork for eeg decoding,” accpeted by NeurIPS2022.
 6. ...
+
+
+### Related Repositories
+
+We list the repositories of related python packages and baseslines as follows, 
+
++ FBCSP: [<img src="https://img.shields.io/badge/GitHub-FBCSP-b31b1b"></img>](https://fbcsptoolbox.github.io/)
++ FBCNet: [<img src="https://img.shields.io/badge/GitHub-FBCNet-b31b1b"></img>](https://github.com/ravikiran-mane/FBCNet)
++ pyRiemann: [<img src="https://img.shields.io/badge/GitHub-pyRiemann-b31b1b"></img>](https://github.com/pyRiemann/pyRiemann)
++ SPDNet: [<img src="https://img.shields.io/badge/GitHub-SPDNet(Z.W.Huang)-b31b1b"></img>](https://github.com/zhiwu-huang/SPDNet) [<img src="https://img.shields.io/badge/GitHub-SPDNet(Lip6)-b31b1b"></img>](https://gitlab.lip6.fr/schwander/torchspdnet)
++ geoopt: [<img src="https://img.shields.io/badge/GitHub-geoopt-b31b1b"></img>](https://github.com/geoopt/geoopt)
 
 ### Data Availability
 
