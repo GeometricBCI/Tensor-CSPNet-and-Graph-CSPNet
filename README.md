@@ -28,7 +28,7 @@ Tensor-CSPNet is the first geometric deep learning approach for the motor imager
 
 ![Illustration of Tensor-CSPNet](img/Tensor_CSPNet_v100.png)
 
-If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in references and cite. It is now early accessed in IEEE TNNLS.
+If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in references and cite. 
         
         @ARTICLE{9805775,
             author={Ju, Ce and Guan, Cuntai},
@@ -47,7 +47,7 @@ Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG 
 
 ![Illustration of Graph-CSPNet](img/graph_CSPNet.png)
 
-    If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. It has been submitted. 
+    If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. 
     
    
         @ARTICLE{9805775,
@@ -100,6 +100,8 @@ with the dataset discription [**EEG dataset and OpenBMI toolbox for three BCI pa
 with the dataset discription [**BCI Competition 2008 – Graz data set A**](https://www.bbci.de/competition/iv/desc_2a.pdf) and the introduction to [**the BCI competition**](https://www.bbci.de/competition/iv/).
 
 ### License and Attribution
+
+Copyright 2022 S-Lab, Nanyang Technological University. All rights reserved.
 
 Please refer to the LICENSE file for the licensing of our code.
 
