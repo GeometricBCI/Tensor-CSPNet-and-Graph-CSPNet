@@ -11,7 +11,7 @@ The mainstream of an effective MI-EEG classifier will exploit information from t
 | Geometric Methods     | Tensor-CSPNet       |Graph-CSPNet   |
 | ---------------------- | ------------- | ------------- |
 | 1.Network Input:          | Tensorized Spatial Covariance Matrices         | Time-frequency Graph  |
-| 2.Architecture:           | Mixed Geometric Deep Learning:         | Geometric Deep Learning:  |
+| 2.Architecture:           | (Mixed) Geometric Deep Learning:         | Geometric Deep Learning:  |
 |                        | BiMaps; CNNs                           | Graph-BiMaps |
 | 3.Optimizer:             | Riemannian (Adaptive) Optimization     | Riemannian (Adaptive) Optimization|
 |4.Underlying Space:|SPD Manifolds| SPD Manifolds|
