@@ -1,4 +1,4 @@
-I would like to call the following novel path the \textbf{geometric method} in motor imagery-electroencephalography (MI-EEG) classification. Because we hope to keep it alive by involving and sowing the seeds of more techniques and perspectives from differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, etc. Thanks for the geometers' great contributions to engineering disciplines.
+I would like to call the following novel path the geometric method in motor imagery-electroencephalography (MI-EEG) classification. Because we hope to keep it alive by involving and sowing the seeds of more techniques and perspectives from differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, etc. Thanks for the geometers' great contributions to engineering disciplines.
 
 # Tensor-CSPNet and Graph-CSPNet
 
