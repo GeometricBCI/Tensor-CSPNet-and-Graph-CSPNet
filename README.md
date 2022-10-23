@@ -84,9 +84,9 @@ We list the repositories of related python packages and baseslines as follows,
 
 ### Timeline
 
-# Before 2020
-# 2020
-# 2022
+#### Before 2020
+#### 2020
+#### 2022
 +SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG
 
 ### Data Availability
