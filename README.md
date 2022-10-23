@@ -73,14 +73,12 @@ There are two kinds of optimizers that we provide in this folder. One is called 
 
 We list the repositories of related python packages and baseslines as follows, 
 
-+ FBCSP:https://fbcsptoolbox.github.io/
-+ FBCNet:https://github.com/ravikiran-mane/FBCNet
-+ EEGNet:https://github.com/vlawhern/arl-eegmodels
-+ pyRiemann:https://github.com/pyRiemann/pyRiemann
-+ SPDNet:https://github.com/zhiwu-huang/SPDNet
-+ torchspdnet:https://gitlab.lip6.fr/schwander/torchspdnet
-+ geoopt:https://github.com/geoopt/geoopt
-+ TSMNet:https://github.com/rkobler/TSMNet
++ FBCSP:[<img src="https://img.shields.io/badge/GitHub-FBCSP-b31b1b"></img>](https://fbcsptoolbox.github.io/)
++ FBCNet:[<img src="https://img.shields.io/badge/GitHub-FBCNet-b31b1b"></img>](https://github.com/ravikiran-mane/FBCNet)
++ pyRiemann:[<img src="https://img.shields.io/badge/GitHub-pyRiemann-b31b1b"></img>](https://github.com/pyRiemann/pyRiemann)
++ SPDNet:[<img src="https://img.shields.io/badge/GitHub-SPDNet(Z.W.Huang)-b31b1b"></img>](https://github.com/zhiwu-huang/SPDNet)[<img src="https://img.shields.io/badge/GitHub-SPDNet(Lip6)-b31b1b"></img>](https://gitlab.lip6.fr/schwander/torchspdnet)
++ geoopt:[<img src="https://img.shields.io/badge/GitHub-geoopt-b31b1b"></img>](https://github.com/geoopt/geoopt)
+
 
 ### Timeline of Related Works
 
