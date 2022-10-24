@@ -1,4 +1,4 @@
-We would like to call the following novel path the **geometric method** in motor imagery-electroencephalography (MI-EEG) classification. Because we hope to keep it alive by involving and sowing the seeds of more techniques and perspectives from differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, geometric deep learning, etc. 
+This repo contains two classifier, Tensor-CSPNet and Graph-CSPNet, in motor imagery-electroencephalography (MI-EEG) classification. We would like to call this novel path the **geometric method** , because we hope to keep it alive by involving and sowing the seeds of more techniques and perspectives from differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, geometric deep learning, etc. 
 
 # Tensor-CSPNet and Graph-CSPNet
 
