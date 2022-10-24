@@ -63,9 +63,13 @@ Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG 
 
 ### Timeline of Related Works
 
+
+
 #### Before 2020
 
-Great thanks to all of the poineers for techniques in SPD manifolds and Riemannian-based classifiers in BCIs, including Xavier Pennec, Alexandre Barachant, Marco Congedo, Fabien Lotte, Christian Jutten, Zhiwu Huang, et al. for their great contributions in developing the fundamental tools and perspectives for this path. 
+Great thanks to all of the poineers for techniques in SPD manifolds and Riemannian-based classifiers in BCIs, including Xavier Pennec, Alexandre Barachant, Marco Congedo, Christian Jutten, Florian Yger, Zhiwu Huang, Olivier Schwander, Frederic Barbaresco, et al. for their great contributions in developing the fundamental tools and perspectives for this path. 
+
+#### 2010 ~ 20
 
 #### 2020
 1. C. Ju, D. Gao, R. Mane, B. Tan, Y. Liu and C. Guan, "Federated Transfer Learning for EEG Signal Classification," 2020 42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society, 2020, pp. 3040-3045, doi: 10.1109/EMBC44109.2020.9175344. (**EMBC2020**)
