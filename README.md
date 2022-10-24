@@ -85,7 +85,7 @@ The models are provided under `/utils/model` inside there we have Tensor-CSPNet 
 Keep in mind that with the given network architecture and training parameters in the folder, Tensor-CSPNet and Graph-CSPNet achieve around 76% on the CV scenario and around 72% on the holdout scenario on the BCIC-IV-2a dataset, and around 73% on the CV scenario and around 69% on the holdout scenario on the KU dataset using my local computer. And, the reported results are the best that I achieve after several runs. It is normal to have a bit of randomness in each run because of many computational issues. The classification performance of Tensor-CSPNet and Graph-CSPNet is near optimal on the given scenarios. For better performance, please try more hyperparamerter combinations in each run, i.e., signal segmentation, training parameters, etc. 
 
 Both Tensor-CSPNet and Graph-CSPNet use matrix backpropagation for updating weights in each layer, which runs a little slower in each epoch than that of typical one, but 50 epochs in total in a run probably yields relatively good performance. For other MI-BCI datasets, it is suggested to try a novel segmentation plan that characterizes the region of interest associated with the task. Please modify the related classes in `/utils/load_data`. There are several tips in training probably helpful to follow:
-Tip 1. Set the learning rate = 1e-3;
+Tip 1. Set the initial learning rate = 1e-3;
 Tip 2. Pick a not so big batch size for training;
 Tip 3. The epoch of each run should at least 50 in either scenario. So, don't use the early stopping before 50 epoch;
 Tip 4. For the CV scenario, I sometimes to ban the validation process in order to increase the number of trials for training. 
