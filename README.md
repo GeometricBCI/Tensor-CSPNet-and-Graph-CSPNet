@@ -2,7 +2,6 @@ This repo contains the implementation of two classifiers, Tensor-CSPNet and Grap
 
 # Tensor-CSPNet and Graph-CSPNet
 
-In this repository, two MI-EEG classifiers were implemented using geometric deep learning on symmetric positive definite manifolds. In essence, it is a deep learning-based MI-EEG classifier on the second-order statistics of EEG signals. In contrast to first-order statistics, using these second-order statistics is the classical treatment in MI-EEG classification, and the discriminative information contained in these second-order statistics is adequate for classification.
 
 ## Introduction
 
@@ -60,7 +59,7 @@ Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG 
 
 #### Before 2020
 
-Tensor-CSPNet and Graph-CSPNet are deep learning-based classifiers on the second-order statistics of EEGs. Based on Riemannian geometry-based perspective in BCIs for the past ten years, developed by Alexandre Barachant, Marco Congedo, Christian Jutten, Florian Yger, etc., Tensor-CSPNet and Graph-CSPNet use modern second-order neural networks on SPD manifolds developed by Zhiwu Huang, Luc Van Gool, Daniel Brooks, Olivier Schwander, Frederic Barbaresco, etc. They probabily start a novel technology generation of the widely-used common spatial pattern method in BCIs during the deep learning age. Great thanks to all of the poineers for their great contributions in developing the fundamental tools and contributing perspectives for this path. 
+Tensor-CSPNet and Graph-CSPNet are deep learning-based classifiers on the second-order statistics of EEGs. In contrast to first-order statistics, using these second-order statistics is the classical treatment in MI-EEG classification, and the discriminative information contained in these second-order statistics is adequate for classification. Based on Riemannian geometry-based perspective in BCIs for the past ten years, developed by Alexandre Barachant, Marco Congedo, Christian Jutten, Florian Yger, etc., Tensor-CSPNet and Graph-CSPNet use modern second-order neural networks on SPD manifolds developed by Zhiwu Huang, Luc Van Gool, Daniel Brooks, Olivier Schwander, Frederic Barbaresco, etc. They probabily start a novel technology generation of the widely-used common spatial pattern method in BCIs during the deep learning age. Great thanks to all of the poineers for their great contributions in developing the fundamental tools and contributing perspectives for this path. 
 
 
 #### 2020
