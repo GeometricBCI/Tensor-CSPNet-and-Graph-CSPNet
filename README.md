@@ -60,7 +60,7 @@ Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG 
 
 #### Before 2020
 
-Tensor-CSPNet and Graph-CSPNet are deep learning-based classifiers on the second-order statistics of EEGs. Based on Riemannian geometry-based perspective in BCIs for the past ten years, developed by Alexandre Barachant, Marco Congedo, Christian Jutten, Florian Yger, etc., they use modern second-order neural networks on SPD manifolds developed by Zhiwu Huang, Luc Van Gool, Daniel Brooks, Olivier Schwander, Frederic Barbaresco, etc. They probabily start a novel technology generation of the widely-used common spatial pattern method in BCIs during the deep learning age. Great thanks to all of the poineers for their great contributions in developing the fundamental tools and proposing perspectives for this path. 
+Tensor-CSPNet and Graph-CSPNet are deep learning-based classifiers on the second-order statistics of EEGs. Based on Riemannian geometry-based perspective in BCIs for the past ten years, developed by Alexandre Barachant, Marco Congedo, Christian Jutten, Florian Yger, etc., they use modern second-order neural networks on SPD manifolds developed by Zhiwu Huang, Luc Van Gool, Daniel Brooks, Olivier Schwander, Frederic Barbaresco, etc. They probabily start a novel technology generation of the widely-used common spatial pattern method in BCIs during the deep learning age. Great thanks to all of the poineers for their great contributions in developing the fundamental tools and contributing perspectives for this path. 
 
 
 #### 2020
