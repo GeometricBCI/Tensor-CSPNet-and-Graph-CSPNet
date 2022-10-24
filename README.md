@@ -74,7 +74,7 @@ Tensor-CSPNet and Graph-CSPNet are deep learning-based classifiers on the second
 1. C. Ju and C. Guan, “Tensor-cspnet: A novel geometric deep learning framework for motor imagery classification,” IEEE Transactions on Neural Networks and Learning Systems, 2022, pp. 1–15, doi: 10.1109/TNNLS.2022.3172108.(**TNNLS2022**)
 2. C. Ju and C. Guan, “Deep optimal transport for domain adaptation on spd manifolds,” arXiv preprint arXiv:2201.05745, 2022, submitted.
 3. R. J. Kobler, J.-i. Hirayama, and M. Kawanabe, “Controlling the fréchet variance improves batch normalization on the symmetric positive definite manifold,” in ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing. IEEE, 2022, pp. 3863–3867. (**ICASSP2022**)
-4. R. J. Kobler, J.-i. Hirayama, Q. Zhao, and M. Kawanabe, "SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG," accepted by **NeurIPS2022**. [<img src="https://img.shields.io/badge/GitHub-TSMNet-b31b1b"></img>](https://github.com/rkobler/TSMNet)
+4. R. J. Kobler, J.-i. Hirayama, Q. Zhao, and M. Kawanabe, "SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG," accepted by **NeurIPS2022**. 
 5. Y.-T.Pan, J.-L.Chou, and C.-S.Wei, “Matt:Amanifoldattentionnetwork for eeg decoding,” accpeted by **NeurIPS2022**.
 6. ...
 
@@ -82,6 +82,8 @@ Tensor-CSPNet and Graph-CSPNet are deep learning-based classifiers on the second
 ### Related Repositories
 
 We list the repositories of related python packages as follows: [<img src="https://img.shields.io/badge/GitHub-FBCSP-b31b1b"></img>](https://fbcsptoolbox.github.io/), [<img src="https://img.shields.io/badge/GitHub-FBCNet-b31b1b"></img>](https://github.com/ravikiran-mane/FBCNet), [<img src="https://img.shields.io/badge/GitHub-pyRiemann-b31b1b"></img>](https://github.com/pyRiemann/pyRiemann), [<img src="https://img.shields.io/badge/GitHub-SPDNet(Z.W.Huang)-b31b1b"></img>](https://github.com/zhiwu-huang/SPDNet), [<img src="https://img.shields.io/badge/GitHub-SPDNet(LIP6)-b31b1b"></img>](https://gitlab.lip6.fr/schwander/torchspdnet), and [<img src="https://img.shields.io/badge/GitHub-geoopt-b31b1b"></img>](https://github.com/geoopt/geoopt).
+
+Another implementation refers to R.J.Kobler [<img src="https://img.shields.io/badge/GitHub-TSMNet-b31b1b"></img>](https://github.com/rkobler/TSMNet)
 
 ## Usages
 
