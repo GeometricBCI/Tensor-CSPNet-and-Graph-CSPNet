@@ -49,17 +49,12 @@ Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG 
 
     If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. 
     
-   
-        @ARTICLE{9805775,
-            author={Ju, Ce and Guan, Cuntai},
-            journal={IEEE Transactions on Neural Networks and Learning Systems}, 
-            title={Tensor-CSPNet: A Novel Geometric Deep Learning Framework for Motor Imagery Classification}, 
-            year={2022},
-            volume={},
-            number={},
-            pages={1-15},
-            doi={10.1109/TNNLS.2022.3172108}
-          }
+        @article{ju2022deep,
+                title={Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis},
+                author={Ju, Ce and Guan, Cuntai},
+                journal={arXiv preprint arXiv:4560338},
+                year={2022}
+               }
 
 ### Timeline of Related Works
 
