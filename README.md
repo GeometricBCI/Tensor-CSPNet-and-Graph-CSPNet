@@ -104,7 +104,7 @@ with the dataset discription [**BCI Competition 2008 – Graz data set A**](http
 
 ### License and Attribution
 
-Copyright 2022 S-Lab, Nanyang Technological University. All rights reserved.
+Copyright 2022 S-Lab. All rights reserved.
 
 Please refer to the LICENSE file for the licensing of our code.
 
