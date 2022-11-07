@@ -1,4 +1,4 @@
-This repo contains the implementation of two classifiers, Tensor-CSPNet and Graph-CSPNet, in motor imagery-electroencephalography (MI-EEG) classification. We would like to call this novel path the **geometric method**, because we hope to keep it alive by involving and sowing the seeds of more techniques and perspectives from differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, geometric deep learning, etc. 
+This repo contains the Python implementation of two classifiers, Tensor-CSPNet and Graph-CSPNet, for motor imagery-electroencephalography (MI-EEG) classification. We would like to call this novel path the **geometric method**, because we hope to keep it alive by involving and sowing the seeds of more techniques and perspectives from differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, geometric deep learning, etc. 
 
 # Tensor-CSPNet and Graph-CSPNet
 
@@ -50,7 +50,7 @@ Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG 
         @article{ju2022deep,
                 title={Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis},
                 author={Ju, Ce and Guan, Cuntai},
-                journal={arXiv preprint arXiv:4560338},
+                journal={arXiv preprint arXiv:2211.02641},
                 year={2022}
                }
 
