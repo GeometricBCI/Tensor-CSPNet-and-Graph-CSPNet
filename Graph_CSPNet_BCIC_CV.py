@@ -1,6 +1,5 @@
 '''
 #####################################################################################################################
-Author     : Ce Ju, Nanyang Technological University. 
 Date       : 1st, Sep., 2022
 ---------------------------------------------------------------------------------------------------------------------
 Discription: Trainning file of Graph-CSPNet for cross-validation scenario on BCIC-IV-2a. 
