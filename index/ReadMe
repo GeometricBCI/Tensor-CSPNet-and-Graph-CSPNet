@@ -1,4 +1,4 @@
-This is an index set for the balanced train-test split. 
+This is an index set for the balanced train-test split for cross-validation scenario as an example. 
 
 Description of the file format:
 
@@ -6,3 +6,5 @@ For example:
 
 "sess2_sub3_train_index.npy": This is the training trials for subject 3 in Session 2.
 "sess2_sub3_test_index.npy": This is the test trials for subject 3 in Session 2.
+
+
