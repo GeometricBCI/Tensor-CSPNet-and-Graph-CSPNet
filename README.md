@@ -1,10 +1,11 @@
-This repo contains the Python implementation of two classifiers, Tensor-CSPNet and Graph-CSPNet, for motor imagery-electroencephalography (MI-EEG) classification. We would like to call this novel path the **geometric method**, because we hope to keep it alive by involving and sowing the seeds of more techniques and perspectives from differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, geometric deep learning, etc. 
+This repo contains a Python implementation of Tensor-CSPNet and Graph-CSPNet which are two motor imagery-electroencephalography (MI-EEG) classifiers. We would like to call this novel path the **geometric method**, because we hope to keep it alive by involving and sowing the seeds of more techniques and perspectives from differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, geometric deep learning, etc. 
 
 # Tensor-CSPNet and Graph-CSPNet
 
 ## Introduction
 
-The mainstream of an effective MI-EEG classifier will exploit information from the time, spatial, and frequency domains. For spatial information, they both use BiMap-structure as the BiMap transformation in the CSP methods. For temporal and frequency information, their architectures vary in two approaches. Tensor-CSPNet uses CNNs for capturing the temporal dynamics, while Graph-CSPNet uses graph-based techniques for capturing information behind the time-frequency domains. In the following table, we have a detailed comparision of two methods. 
+The mainstream MI-EEG classifier will exploit discriminative information from the time, spatial, and frequency domains. Tensor-CSPNet and Graph-CSPNet both use BiMap network structures similar to the CSP methods to exploit spatial information. For temporal and frequency information, their architectures vary in two approaches. Tensor-CSPNet uses convolutional neural networks to capture the temporal dynamics, while Graph-CSPNet uses graph-based techniques to capture information behind the time-frequency domains. In the following table, we have a detailed comparison of the two methods. 
+
 
 | Geometric Methods     | Tensor-CSPNet       |Graph-CSPNet   |
 | ---------------------- | ------------- | ------------- |
@@ -47,12 +48,12 @@ Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG 
 
     If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. 
     
-        @article{ju2022deep,
-                title={Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis},
-                author={Ju, Ce and Guan, Cuntai},
-                journal={arXiv preprint arXiv:2211.02641},
-                year={2022}
-               }
+        @article{ju2022graph,
+          title={Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis},
+          author={Ju, Ce and Guan, Cuntai},
+          journal={arXiv preprint arXiv:2211.02641},
+          year={2022}
+        }
 
 ### Timeline of Related Works
 
