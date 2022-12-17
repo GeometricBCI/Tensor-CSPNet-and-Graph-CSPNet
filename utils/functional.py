@@ -143,7 +143,8 @@ def modeig_forward(P, op, eig_mode='svd', param=None):
     for i in range(batch_size):
         for j in range(channels):
             if(eig_mode=='eig'):
-                s, U[i, j] = th.eig(P[i,j], True)
+                #This is for v_pytorch >= 1.9;
+                s, U[i, j] = th.linalg.eig(P[i,j][None,:])
                 S[i, j]    = s[:,0]
             elif(eig_mode=='svd'):
                 U[i,j], S[i,j], _ = th.svd(P[i,j])
