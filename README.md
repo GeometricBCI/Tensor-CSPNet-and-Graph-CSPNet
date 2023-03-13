@@ -10,8 +10,7 @@ In line with the event-related desynchronization and event-related synchronizati
 | Geometric Methods     | Tensor-CSPNet       |Graph-CSPNet   |
 | ---------------------- | ------------- | ------------- |
 | Network Input:          | Tensorized Spatial Covariance Matrices         | Time-frequency Graph  |
-| Architecture:           | (Mixed) Geometric Deep Learning:         | Geometric Deep Learning:  |
-|                        | BiMaps; CNNs                           | Graph-BiMaps |
+| Architecture:           | Geometric Deep Learning:BiMaps; CNNs   Geometric Deep Learning: Graph-BiMaps |
 |Distinctive Structure:|CNNs for temporal dynamics|Spectral clustering for time-frequency distributions|
 |Training Optimizer:             | Riemannian Adaptive Optimization     | Riemannian Adaptive Optimization|
 |Underlying Space:|SPD Manifolds| SPD Manifolds|
