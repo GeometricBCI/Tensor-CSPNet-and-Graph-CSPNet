@@ -221,31 +221,6 @@ class load_KU:
 
           return np.matmul(D, A), A
 
-    def GGT_graph_matrix_fn(self, k = 12, gamma = 50):
-
-          '''
-          time_step: a list, step of diffusion to right direction.
-          freq_step: a list, step of diffusion to down direction.
-          gamma: Gaussian coefficent.
-          '''
-
-          A = np.zeros((sum(self.block_dims), sum(self.block_dims))) 
-
-          for m in range(sum(self.block_dims)):
-              row_record = []
-              for n in range(sum(self.block_dims)):
-                row_record.append(np.exp(-self._riemann_distance(self.lattice[m], self.lattice[n])**2/gamma))
-              k_index = sorted(range(len(row_record)), key=lambda i: row_record[i])[-k:]
-              for index in k_index:
-                A[m, index] = row_record[index]
-
-          A = (np.abs(A.T - A) + A.T + A)/2
-
-          D = np.linalg.inv(np.diag(np.sqrt(np.sum(A, axis = 0))))
-
-          return np.matmul(D, A), A
-
-
     def generate_training_test_set_CV(self, kf_iter):
 
         train_idx = self.train_indices[kf_iter]
@@ -446,29 +421,6 @@ class load_BCIC:
                         A[start_point + j, start_point + i] = A[start_point + i, start_point + j]
             start_point += self.block_dims[m]
 
-          D = np.linalg.inv(np.diag(np.sqrt(np.sum(A, axis = 0))))
-
-          return np.matmul(D, A), A
-
-    def GGT_graph_matrix_fn(self, k = 12, gamma =50):
-
-          '''
-          time_step: a list, step of diffusion to right direction.
-          freq_step: a list, step of diffusion to down direction.
-          gamma: Gaussian coefficent.
-          '''
-
-          A = np.zeros((sum(self.block_dims), sum(self.block_dims))) 
-
-          for m in range(sum(self.block_dims)):
-              row_record = []
-              for n in range(sum(self.block_dims)):
-                row_record.append(np.exp(-self._riemann_distance(self.lattice[m], self.lattice[n])**2/gamma))
-              k_index = sorted(range(len(row_record)), key=lambda i: row_record[i])[-k:]
-              for index in k_index:
-                A[m, index] = row_record[index]
-
-          A = (np.abs(A.T - A) + A.T + A)/2
           D = np.linalg.inv(np.diag(np.sqrt(np.sum(A, axis = 0))))
 
           return np.matmul(D, A), A
