@@ -77,6 +77,10 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 6. C. Ju and C. Guan, "Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis," arXiv preprint arXiv:2211.02641, 2022, submitted.
 7. Daniel Wilson, Robin Tibor Schirrmeister, Lukas Alexander Wilhelm Gemein, Tonio Ball, "Deep Riemannian Networks for EEG Decoding", arXiv preprint arXiv:2212.10426, 2022.
 
+#### 2023
+1. Ju, C., Kobler, R. J., & Guan, C. (2023). Score-based Data Generation for EEG Spatial Covariance Matrices: Towards Boosting BCI Performance. arXiv preprint arXiv:2302.11410.
+2. Bonet, C., Malézieux, B., Rakotomamonjy, A., Drumetz, L., Moreau, T., Kowalski, M., & Courty, N. (2023). Sliced-Wasserstein on Symmetric Positive Definite Matrices for M/EEG Signals. arXiv preprint arXiv:2303.05798.
+
 
 
 ### Related Repositories
