@@ -70,16 +70,16 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 1. Suh, Yoon-Je, and Byung Hyung Kim. "Riemannian embedding banks for common spatial patterns with eeg-based spd neural networks." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 35. No. 1. 2021. (**AAAI2021**)
 #### 2022
 1. C. Ju and C. Guan, “Tensor-cspnet: A novel geometric deep learning framework for motor imagery classification,” IEEE Transactions on Neural Networks and Learning Systems, 2022, pp. 1–15, doi: 10.1109/TNNLS.2022.3172108.(**TNNLS2022**)
-2. C. Ju and C. Guan, “Deep optimal transport for domain adaptation on spd manifolds,” arXiv preprint arXiv:2201.05745, 2022, submitted.
+2. C. Ju and C. Guan, “Deep optimal transport for domain adaptation on spd manifolds,” arXiv preprint arXiv:2201.05745, 2022, in review.
 3. R. J. Kobler, J.-i. Hirayama, and M. Kawanabe, “Controlling the fréchet variance improves batch normalization on the symmetric positive definite manifold,” in ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing. IEEE, 2022, pp. 3863–3867. (**ICASSP2022**)
 4. R. J. Kobler, J.-i. Hirayama, Q. Zhao, and M. Kawanabe, "SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG," accepted by **NeurIPS2022**. 
 5. Y.-T.Pan, J.-L.Chou, and C.-S.Wei, “Matt:Amanifoldattentionnetwork for eeg decoding,” accpeted by **NeurIPS2022**.
-6. C. Ju and C. Guan, "Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis," arXiv preprint arXiv:2211.02641, 2022, submitted.
+6. C. Ju and C. Guan, "Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis," arXiv preprint arXiv:2211.02641, 2022, in review.
 7. Daniel Wilson, Robin Tibor Schirrmeister, Lukas Alexander Wilhelm Gemein, Tonio Ball, "Deep Riemannian Networks for EEG Decoding", arXiv preprint arXiv:2212.10426, 2022.
 
 #### 2023
-1. Ju, C., Kobler, R. J., & Guan, C. (2023). Score-based Data Generation for EEG Spatial Covariance Matrices: Towards Boosting BCI Performance. arXiv preprint arXiv:2302.11410.
-2. Bonet, C., Malézieux, B., Rakotomamonjy, A., Drumetz, L., Moreau, T., Kowalski, M., & Courty, N. (2023). Sliced-Wasserstein on Symmetric Positive Definite Matrices for M/EEG Signals. arXiv preprint arXiv:2303.05798.
+1. C. Ju, R.J. Kobler, & C. Guan, Score-based Data Generation for EEG Spatial Covariance Matrices: Towards Boosting BCI Performance. arXiv preprint arXiv:2302.11410, 2023, in review. 
+3. C. Bonet, B. Malézieux, A. Rakotomamonjy, L. Drumetz, T. Moreau, M. Kowalski, & N. Courty, Sliced-Wasserstein on Symmetric Positive Definite Matrices for M/EEG Signals. arXiv preprint arXiv:2303.05798, 2023, in review. 
 
 
 
