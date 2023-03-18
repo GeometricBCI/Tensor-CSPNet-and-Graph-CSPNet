@@ -2,9 +2,8 @@
 #####################################################################################################################
 Description: 
 
-This is a python implementation of Tensor-CSPNet and Graph-CSPNet. The hyperparameters in the model are 
-used in the experiments. We pick the best results of several runs and put them in the paper. The performance could 
-be optimized further. 
+This implementation pertains to Tensor-CSPNet and Graph-CSPNet. The hyperparameters within the model are task/scenario-specific 
+and employed in the paper's experiments.
 
             Input Shape: 
                         (batch size, time windows * frequency bands, channel No., channel No.) ----> Tensor-CSPNet;
@@ -15,17 +14,18 @@ be optimized further.
             self.channel_num: time windows * frequency bands ----> Tensor-CSPNet;
                                                  segment No. ---->  Graph-CSPNet.
 
-            self.dimes: This is for the shape dimension (in and out) in each BiMap layer, 
+            self.dimes: This pertains to the shape dimension (in and out) within each BiMap layer.
+            
+                        For instance, [20, 30, 30, 20] indicates that the first BiMap layer has an input dimension of 20,
+                        and an output dimension of 30, while the second BiMap layer has an input dimension of 30 and
+                        an output dimension of 20.
 
-                        for example, [20, 30, 30, 20] means the first BiMap layer has the input dimension 20, 
-                        and output dimension 30, and the second BiMap layer has the input dimension 30 and 
-                        output dimension 20. 
+            self.kernel_size: This value represents the total number of temporal segments.
 
-            self.kernel_size: This number is the total number of temporal segments. 
-
-            self.tcn_channels: how many output channels h are in CNNs. We suggest a relatively big number. This is
-            because the small one yields a lose of discrimitive information. For example, if kernel_size = 1, 
+            self.tcn_channels: This refers to the number of output channels h in CNNs. We recommend a relatively large 
+            number as a smaller one may result in a loss of discriminative information. For example, if kernel_size = 1,
             the tcn_channel = 16.
+            
 
 #######################################################################################################################
 '''
