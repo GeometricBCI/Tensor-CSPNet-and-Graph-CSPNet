@@ -2,9 +2,9 @@
 #####################################################################################################################
 Discription: 
 
-The utility functions in this file provide the forward function of the ReEig layer, the LogEig layer, 
-and Riemannian Batchnormalization in geometric models (Tensor-CSPNet and Graph-CSPNet). It also provides an optimizer 
-for network architecture. The following functions and classes mainly refer to the following repo: 
+The utility functions in this file offer the forward function for the ReEig layer, the LogEig layer, and Riemannian Batch 
+Normalization in geometric models (Tensor-CSPNet and Graph-CSPNet). Additionally, they provide an optimizer for network 
+architecture. The primary functions and classes are mainly derived from the following repository:
 
 https://gitlab.lip6.fr/schwander/torchspdnet
 https://github.com/adavoudi/spdnet
