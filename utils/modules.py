@@ -2,16 +2,16 @@
 #####################################################################################################################
 Discription: 
 
-This file builds basic modules including the BiMap layer, the graph BiMap layer, the Riemannian 
-Batch Normalization, the ReEig and LogEig layer. 
+This file constructs fundamental modules, encompassing the BiMap layer, the graph BiMap layer, the Riemannian Batch Normalization, 
+the ReEig layer, and LogEig layer. 
 
-These layers consist of the two geomectic modles (Tensor-CSPNet and Graph-CSPNet) in model.py. 
+These layers constitute the two geometric models (Tensor-CSPNet and Graph-CSPNet) found in model.py. 
 
-There are two kinds of weight parameters for initialization as follows, 
+There are two types of weight parameters for initialization as follows:
 
 1. functional.StiefelParameter(th.empty(self._h, self._ni, self._no, dtype = dtype, device = device))
 
-    In this case, the parameter class is typically nn.Parameter. The backpropogations are from the following ways:
+   In this instance, the parameter class is typically nn.Parameter. The backpropagations originate from the subsequent sources:
 
         BiMap/Graph BiMap <------  nn.Parameter; 
 
@@ -19,15 +19,15 @@ There are two kinds of weight parameters for initialization as follows,
 
 2. geoopt.ManifoldParameter(th.empty(self._h, self._ni, self._no), manifold = ..)
 
-    In this case, the parameter class is called from "geoopt" package. Since the weights in BiMap and Riemannian Batch 
-    Normalization are on Stiefel manifolds and SPD manifolds. The backpropogations are from the following ways:
+     In this case, the parameter class is invoked from the "geoopt" package. Since the weights in BiMap and Riemannian Batch Normalization 
+     reside on Stiefel and SPD manifolds, the backpropagations stem from the following sources:
 
         BiMap/Graph BiMap <------ geoopt.ManifoldParameter(,manifold=geoopt.CanonicalStiefel()); 
 
         BatchNormSPD      <------ geoopt.ManifoldParameter(,manifold=geoopt.SymmetricPositiveDefinite()) 
 
-3. The aim of Class SPDIncreaseDim() is to increase the dimension of weights W, e.g., from (3, 3) to (5, 5) with 
-    the expanding dimension being the identity matrix I_2.
+3. The objective of the SPDIncreaseDim() class is to augment the dimension of weights W, for instance, from (3, 3) to (5, 5), with the 
+    expanding dimension being the identity matrix I_2.
 
 #######################################################################################################################
 '''
