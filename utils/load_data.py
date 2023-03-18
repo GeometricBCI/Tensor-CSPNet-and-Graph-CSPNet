@@ -1,14 +1,11 @@
 '''
 ############################################################################################################################
 Discription: 
-
-The two data loader classes are for Korea University dataset and the BCIC-IV-2a dataset. Each loader will
-serve Tensor-CSPNet and Graph-CSPNet on two scenairos, i.e., the cross-validation scenario and the holdout scenario. 
-
-Keep in mind that the segmentation plan in this study is a simple example without a deep reason in neurophysiology, 
-but achiving a relative good result. More reasonable segmentation plans may yield better performance. 
-
-The class of FilterBank is from https://github.com/ravikiran-mane/FBCNet
+The two data loader classes are designed for the Korea University dataset and the BCIC-IV-2a dataset. Each loader supports Tensor-CSPNet 
+and Graph-CSPNet in two scenarios, namely, the cross-validation scenario and the holdout scenario. It is important to note that the 
+segmentation strategy employed in this study is a simplistic example without profound neurophysiological reasoning, yet it achieves 
+relatively good results. More reasonable segmentation approaches may yield enhanced performance. The FilterBank class is sourced 
+from https://github.com/ravikiran-mane/FBCNet.
 
 #############################################################################################################################
 '''
