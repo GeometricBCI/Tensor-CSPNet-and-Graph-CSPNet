@@ -20,7 +20,7 @@ def args_parser():
 
     parser.add_argument('--start_No', type=int, default = 1, help = 'testing starts on subject #')
     parser.add_argument('--end_No', type=int, default = 9, help = 'testing ends on subject #')
-    parser.add_argument('--epochs', type=int, default = 50, help = 'number of epochs to train')
+    parser.add_argument('--epochs', type=int, default = 100, help = 'number of epochs to train')
     parser.add_argument('--patience', type=int, default = 15, help = 'patience for early stopping')
 
     parser.add_argument('--train_batch_size', type = int, default = 29, help = 'batch size in each epoch for trainning')
