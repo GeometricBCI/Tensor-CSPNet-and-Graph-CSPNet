@@ -158,34 +158,35 @@ def main(args, train, val, test, train_y, val_y, test_y, graph_matrix, adjacency
                         sub, total_sub, epoch, args.epochs, 100. * (1+batch_idx) / len(train_loader), loss.cpu().detach().numpy(),\
                         train_correct.item()/len(train_loader.dataset))
                 )
-                    
+        
+        #Due to the excessive noise in EEG data, I am more accustomed to letting the neural network train for 50 epochs first before using early stopping.
+        if epoch > 50:
+                if validation:
+                    print('#####Start Validation######')
+                    valid_losses  = []
+                    valid_loss    =  0
+                    valid_correct =  0
 
-        if validation:
-            print('#####Start Validation######')
-            valid_losses  = []
-            valid_loss    =  0
-            valid_correct =  0
+                    model.eval()
 
-            model.eval()
+                    for batch_idx, (batch_valid, batch_valid_y) in enumerate(valid_loader):
 
-            for batch_idx, (batch_valid, batch_valid_y) in enumerate(valid_loader):
+                        logits         = model(batch_valid.to(device))
+                        output         = F.log_softmax(logits, dim = -1)
+                        valid_loss    += F.nll_loss(output, batch_valid_y.to(device))
+                        valid_losses.append(valid_loss.item())
+                        pred           = output.data.max(1, keepdim=True)[1]
+                        valid_correct += pred.eq(batch_valid_y.to(device).data.view_as(pred)).long().cpu().sum()
 
-                logits         = model(batch_valid.to(device))
-                output         = F.log_softmax(logits, dim = -1)
-                valid_loss    += F.nll_loss(output, batch_valid_y.to(device))
-                valid_losses.append(valid_loss.item())
-                pred           = output.data.max(1, keepdim=True)[1]
-                valid_correct += pred.eq(batch_valid_y.to(device).data.view_as(pred)).long().cpu().sum()
+                    print('Validate loss: {:.10f} Acc: {:.4f}'.format(sum(valid_losses), valid_correct.item()/len(valid_loader.dataset)))
 
-            print('Validate loss: {:.10f} Acc: {:.4f}'.format(sum(valid_losses), valid_correct.item()/len(valid_loader.dataset)))
-            
-            early_stopping(np.average(valid_losses), model)
-            
-            if early_stopping.early_stop:
-              print("Early Stopping!")
-              break
-        else:
-            pass
+                    early_stopping(np.average(valid_losses), model)
+
+                    if early_stopping.early_stop:
+                      print("Early Stopping!")
+                      break
+                else:
+                    pass
         
 
     print('###############################################################')
