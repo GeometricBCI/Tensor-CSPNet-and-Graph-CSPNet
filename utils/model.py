@@ -130,7 +130,7 @@ class Graph_CSPNet_Basic(nn.Module):
         
         if self._mlp:
             self.Classifier = nn.Sequential(
-            nn.Linear(channel_num*dims[-1]**2, channel_num),
+            nn.Linear(channel_num*self.dims[-1]**2, channel_num),
             nn.ReLU(inplace=True),
             nn.Linear(channel_num, channel_num),
             nn.ReLU(inplace=True),
