@@ -13,7 +13,7 @@ In line with the event-related desynchronization and event-related synchronizati
 | Architecture:           | Geometric Deep Learning:BiMaps; CNNs.  | Geometric Deep Learning: Graph-BiMaps. |
 |Distinctive Structure:|CNNs for temporal dynamics.|Spectral clustering for time-frequency distributions.|
 |Training Optimizer:             | Riemannian Adaptive Optimization.     | Riemannian Adaptive Optimization.|
-|Underlying Space:|SPD Manifolds.| SPD Manifolds.|
+|Underlying Space:|SPD Manifolds with Riemannian metric AIRM.| SPD Manifolds with Riemannian metric AIRM.|
 |Methodology Heritage:|Common Spatial Patterns.|Common Spatial Patterns; Riemannian-based Approaches.|
 |Design Principle:|The Time-Space-Frequency Principle: Exploitation in the frequency, space, and time domains sequentially.|The Time-Space-Frequency Principle and the Principle of Time-Frequency: Exploitation in the time-frequency domain simultaneously, and then in the space domain.|
 
