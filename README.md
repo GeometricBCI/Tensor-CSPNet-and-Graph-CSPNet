@@ -13,10 +13,11 @@ In line with the event-related desynchronization and event-related synchronizati
 | Architecture:           | Geometric Deep Learning:BiMaps; CNNs.  | Geometric Deep Learning: Graph-BiMaps. |
 |Distinctive Structure:|CNNs for temporal dynamics.|Spectral clustering for time-frequency distributions.|
 |Training Optimizer:             | Riemannian Adaptive Optimization.     | Riemannian Adaptive Optimization.|
-|Underlying Space:|SPD Manifolds with Riemannian metric AIRM.| SPD Manifolds with Riemannian metric AIRM.|
+|Underlying Space:|SPD Manifolds with Riemannian metric AIRM<sup>*</sup>.| SPD Manifolds with Riemannian metric AIRM.|
 |Methodology Heritage:|Common Spatial Patterns.|Common Spatial Patterns; Riemannian-based Approaches.|
 |Design Principle:|The Time-Space-Frequency Principle: Exploitation in the frequency, space, and time domains sequentially.|The Time-Space-Frequency Principle and the Principle of Time-Frequency: Exploitation in the time-frequency domain simultaneously, and then in the space domain.|
 
+AIRM<sup>*</sup> stands for Affine Invariant Riemannian Metric. It is the most commonly used metric for SPD manifolds and was also the Riemannian metric first used by Alexandre Barachant in his EEG-BCI classifier. In our implementation, Class BatchNormSPD involves parallel transportation, which requires a specific metric to be determined. LogEig and ReEig also require a metric, but we have simplified the process. Different metrics can have some impact on the results, but the degree of impact is much lower than the impact of different network structures using the same metric. Essentially, no metric is specifically designed for this classification problem, so we choose the most commonly used one.
 
 ### Tensor-CSPNet
 
