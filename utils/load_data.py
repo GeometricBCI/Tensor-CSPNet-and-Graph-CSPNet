@@ -16,7 +16,7 @@ import scipy.signal as signal
 from scipy.signal import cheb2ord
 from scipy.linalg import eigvalsh
 import torch as th
-from pyriemann.estimation import Covariances
+from pyriemann.estimation import Covariances, Shrinkage
 
 
 class FilterBank:
@@ -164,7 +164,9 @@ class load_KU:
             for i in range(temporal_seg.shape[0]):
                 cov_stack = []
                 for j in range(temporal_seg.shape[1]):
-                    cov_stack.append(Covariances().transform(temporal_seg[i, j]))
+                    #cov_stack.append(Covariances().transform(temporal_seg[i, j]))
+                    #We apply the shrinkage regularization on input SPD manifolds.
+                    cov_stack.append(Shrinkage(1e-2).transform(Covariances().transform(temporal_seg[i, j])))
                 stack_tensor.append(np.stack(cov_stack, axis = 0))
             stack_tensor = np.stack(stack_tensor, axis = 0)
 
@@ -181,7 +183,9 @@ class load_KU:
               for [a, b] in self.time_freq_graph[str(i)]:
                 cov_record = []
                 for j in range(x_fb.shape[0]):
-                  cov_record.append(Covariances().transform(x_fb[j, i-1:i, :, a:b]))
+                  #cov_record.append(Covariances().transform(x_fb[j, i-1:i, :, a:b]))
+                  #We apply the shrinkage regularization on input SPD manifolds.
+                  cov_record.append(Shrinkage(1e-2).transform(Covariances().transform(x_fb[j, i-1:i, :, a:b])))
                 stack_tensor.append(np.expand_dims(np.concatenate(cov_record, axis = 0), axis = 1))
             stack_tensor = np.concatenate(stack_tensor, axis = 1)
 
@@ -371,7 +375,9 @@ class load_BCIC:
             for i in range(temporal_seg.shape[0]):
                 cov_stack  = []
                 for j in range(temporal_seg.shape[1]):
-                    cov_stack.append(Covariances().transform(temporal_seg[i, j]))
+                    #cov_stack.append(Covariances().transform(temporal_seg[i, j]))
+                    #We apply the shrinkage regularization on input SPD manifolds.
+                    cov_stack.append(Shrinkage(1e-2).transform(Covariances().transform(temporal_seg[i, j])))
                 stack_tensor.append(np.stack(cov_stack, axis = 0))
             stack_tensor   = np.stack(stack_tensor, axis = 0)
 
@@ -386,7 +392,9 @@ class load_BCIC:
               for [a, b] in self.time_freq_graph[str(i)]:
                 cov_record = []
                 for j in range(x_fb.shape[0]):
-                  cov_record.append(Covariances().transform(x_fb[j, i-1:i, :, a:b]))
+                  #cov_record.append(Covariances().transform(x_fb[j, i-1:i, :, a:b]))
+                  #We apply the shrinkage regularization on input SPD manifolds.
+                  cov_record.append(Shrinkage(1e-2).transform(Covariances().transform(x_fb[j, i-1:i, :, a:b])))
                 stack_tensor.append(np.expand_dims(np.concatenate(cov_record, axis = 0), axis = 1))
             stack_tensor   = np.concatenate(stack_tensor, axis = 1)
 
