@@ -1,0 +1,6 @@
+mne 
+pyriemann
+moabb==0.4.5
+numpy
+pandas
+scipy
