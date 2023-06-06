@@ -1,4 +1,7 @@
-This repository includes a Python implementation of Tensor-CSPNet and Graph-CSPNet, which are two classifiers for motor imagery-electroencephalography (MI-EEG). We refer to this category of approaches as the **Geometric BCI Classifier** and aim to continue its development by incorporating additional techniques and perspectives from fields such as differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, and geometric deep learning. Grateful for my background in mathematics and physics, as well as years of training, I have chosen this path to pay tribute to the contributions of theoretical and applied geometers in the past century. What is exciting is that these classifiers have indeed performed well in this small engineering task.
+This repository includes a Python implementation of Tensor-CSPNet and Graph-CSPNet, which are two classifiers for motor imagery-electroencephalography (MI-EEG). 
+
+My current academic goal is to further combine the decoding of neural signals with mainstream techniques in theoretical mathematics. Grateful for my background in theoretical mathematics and physics, as well as years of training, I have chosen this path to pay tribute to the contributions of theoretical and applied geometers in the past century. We refer to this category of approaches as the **Geometric BCI Classifier** and aim to continue its development by incorporating additional techniques and perspectives from fields such as differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, and geometric deep learning. What is exciting is that these classifiers have indeed performed well in this small engineering task. 
+
 
 # Tensor-CSPNet and Graph-CSPNet
 
@@ -87,7 +90,15 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 
 ### Related Repositories
 
-We extend our gratitude to the open-source community, which facilitates the wider dissemination of the work of other researchers as well as our own. The coding style in this repo is relatively rough. We welcome anyone to refactor it to make it more effective. The codebase for our models builds heavily on the following repositories: [<img src="https://img.shields.io/badge/GitHub-FBCSP-b31b1b"></img>](https://fbcsptoolbox.github.io/), [<img src="https://img.shields.io/badge/GitHub-FBCNet-b31b1b"></img>](https://github.com/ravikiran-mane/FBCNet), [<img src="https://img.shields.io/badge/GitHub-pyRiemann-b31b1b"></img>](https://github.com/pyRiemann/pyRiemann), [<img src="https://img.shields.io/badge/GitHub-SPDNet(Z.W.Huang)-b31b1b"></img>](https://github.com/zhiwu-huang/SPDNet), [<img src="https://img.shields.io/badge/GitHub-SPDNet(LIP6)-b31b1b"></img>](https://gitlab.lip6.fr/schwander/torchspdnet), and [<img src="https://img.shields.io/badge/GitHub-geoopt-b31b1b"></img>](https://github.com/geoopt/geoopt).  Another implementation of SPD manifold-valued neural networks refers to Kobler's TSMNet [<img src="https://img.shields.io/badge/GitHub-TSMNet-b31b1b"></img>](https://github.com/rkobler/TSMNet). 
+We extend our gratitude to the open-source community, which facilitates the wider dissemination of the work of other researchers as well as our own. The coding style in this repo is relatively rough. We welcome anyone to refactor it to make it more effective. The codebase for our models builds heavily on the following repositories: 
+[<img src="https://img.shields.io/badge/GitHub-FBCSP-b31b1b"></img>](https://fbcsptoolbox.github.io/)
+[<img src="https://img.shields.io/badge/GitHub-FBCNet-b31b1b"></img>](https://github.com/ravikiran-mane/FBCNet)
+[<img src="https://img.shields.io/badge/GitHub-pyRiemann-b31b1b"></img>](https://github.com/pyRiemann/pyRiemann)
+[<img src="https://img.shields.io/badge/GitHub-SPDNet(Z.W.Huang)-b31b1b"></img>](https://github.com/zhiwu-huang/SPDNet)
+[<img src="https://img.shields.io/badge/GitHub-SPDNet(LIP6)-b31b1b"></img>](https://gitlab.lip6.fr/schwander/torchspdnet)
+[<img src="https://img.shields.io/badge/GitHub-geoopt-b31b1b"></img>](https://github.com/geoopt/geoopt)
+
+Another implementation of SPD manifold-valued neural networks refers to Kobler's TSMNet [<img src="https://img.shields.io/badge/GitHub-TSMNet-b31b1b"></img>](https://github.com/rkobler/TSMNet). 
 
 ## Usages
 
@@ -110,7 +121,7 @@ The KU dataset (a.k.a., the OpenBMI dataset) can be downloaded in the following 
 with the dataset discription [**EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy**](https://academic.oup.com/gigascience/article/8/5/giz002/5304369); The BCIC-IV-2a dataset can be downloaded in the following link:
 [**BNCI-Horizon-2020**](http://bnci-horizon-2020.eu/database/data-sets)
 with the dataset discription [**BCI Competition 2008 – Graz data set A**](https://www.bbci.de/competition/iv/desc_2a.pdf) and the introduction to [**the BCI competition**](https://www.bbci.de/competition/iv/).
-All of this data can be accessed through the [**MOABB**] package (https://github.com/NeuroTechX/moabb). This package includes a benchmark dataset for advanced decoding algorithms, which comprises 12 open-access datasets and covers over 250 subjects.
+All of this data can be accessed through the [**MOABB**](https://github.com/NeuroTechX/moabb). This package includes a benchmark dataset for advanced decoding algorithms, which comprises 12 open-access datasets and covers over 250 subjects.
 
 
 ### License and Attribution
