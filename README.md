@@ -28,7 +28,7 @@ AIRM<sup>*</sup> stands for Affine Invariant Riemannian Metric. It is the most c
 
 Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
 
-![Illustration of Graph-CSPNet](graph_CSPNet)
+![Illustration of Graph-CSPNet](Graph_CSPNet.png)
 
     If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. 
     
