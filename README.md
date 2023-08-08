@@ -1,6 +1,6 @@
 This repository includes a Python implementation of Tensor-CSPNet and Graph-CSPNet, which are two classifiers for motor imagery-electroencephalography (MI-EEG). 
 
-My current academic goal is to further combine the decoding of neural signals with mainstream techniques in theoretical mathematics. Grateful for my background in theoretical mathematics and physics, as well as years of training, I have chosen this path to pay tribute to the contributions of theoretical and applied geometers in the past century. We refer to this category of approaches as the **Geometric BCI Classifier** and aim to continue its development by incorporating additional techniques and perspectives from fields such as differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, and geometric deep learning. What is exciting is that these classifiers have indeed performed well in this small engineering task. 
+My current academic goal is to further combine the decoding of neural signals with mainstream techniques in theoretical mathematics. Grateful for my background in theoretical mathematics and physics, as well as years of training, I have chosen this path to pay tribute to the contributions of theoretical and applied geometers in the past century. We refer to this category of approaches as the **Geometric MI-BCI Classifier** and aim to continue its development by incorporating additional techniques and perspectives from fields such as differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, and geometric deep learning. What is exciting is that these classifiers have indeed performed well in this small engineering task. 
 
 
 # Tensor-CSPNet and Graph-CSPNet
@@ -21,6 +21,24 @@ In line with the event-related desynchronization and event-related synchronizati
 |Design Principle:|The Time-Space-Frequency Principle: Exploitation in the frequency, space, and time domains sequentially.|The Time-Space-Frequency Principle and the Principle of Time-Frequency: Exploitation in the time-frequency domain simultaneously, and then in the space domain.|
 
 AIRM<sup>*</sup> stands for Affine Invariant Riemannian Metric. It is the most commonly used metric for SPD manifolds and was also the Riemannian metric first used by Alexandre Barachant in his EEG-BCI classifier. In our implementation, Class BatchNormSPD involves parallel transportation, which requires a specific metric to be determined. LogEig also require a metric, but we have simplified the process that we compute it at identity since SPD manifolds are geodesically complete. Different metrics can have some impact on the results, but the degree of impact is much lower than the impact of different network structures using the same metric. Essentially, no metric is specifically designed for this classification problem, so we choose the most commonly used one.
+
+### Graph-CSPNet
+
+[<img src="https://img.shields.io/badge/arXiv-2211.02641-b31b1b"></img>](https://arxiv.org/abs/2211.02641)
+
+Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
+
+![Illustration of Graph-CSPNet](Graph_CSPNet.pdf)
+
+    If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. 
+    
+        @article{ju2022graph,
+          title={Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis},
+          author={Ju, Ce and Guan, Cuntai},
+          journal={arXiv preprint arXiv:2211.02641},
+          year={2022}
+        }
+
 
 ### Tensor-CSPNet
 
@@ -44,22 +62,6 @@ If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in refere
             doi={10.1109/TNNLS.2022.3172108}
           }
           
-### Graph-CSPNet
-
-[<img src="https://img.shields.io/badge/arXiv-2211.02641-b31b1b"></img>](https://arxiv.org/abs/2211.02641)
-
-Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
-
-![Illustration of Graph-CSPNet](Graph_CSPNet.png)
-
-    If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. 
-    
-        @article{ju2022graph,
-          title={Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis},
-          author={Ju, Ce and Guan, Cuntai},
-          journal={arXiv preprint arXiv:2211.02641},
-          year={2022}
-        }
 
 ### Timeline of Related Works
 
@@ -111,6 +113,9 @@ Both Tensor-CSPNet and Graph-CSPNet use matrix backpropagation to update weights
 In particular, we recommend applying shrinkage regularization to the input matrices. Shrinkage regularization is a method used to estimate a positive definite matrix, which is a matrix that is symmetric and has all positive eigenvalues. This method is particularly useful when the number of observations is small relative to the number of variables, as this can lead to an unstable estimate of the SPD matrix.
 
 We provide two optimizers in this folder: Class MixOptimizer in `/utils/functional`, and the geoopt package. In my implementation, initializing parameters from the BiMap layer with nn.Parameter and parameters from Riemannian Batch Normalization with geoopt has yielded the best classification performance. However, this may not always be the best approach for other tasks.
+
+This code has been made available subsequent to the completion of the Graph-CSPNet paper. A few modifications have been introduced to the functional functions following the completion of the Tensor-CSPNet paper. To replicate the results presented in Table IV of the Graph-CSPNet paper, kindly adhere to the hyperparameters outlined in the same paper. The provided code corresponds to the particular hyperparameters detailed in the Graph-CSPNet paper.
+
 
 
 
