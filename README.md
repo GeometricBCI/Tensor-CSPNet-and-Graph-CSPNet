@@ -26,7 +26,7 @@ AIRM<sup>*</sup> stands for Affine Invariant Riemannian Metric. It is the most c
 
 [<img src="https://img.shields.io/badge/arXiv-2211.02641-b31b1b"></img>](https://arxiv.org/abs/2211.02641)
 
-Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
+Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. (Has accepted by TNNLS 2023)
 
 ![Illustration of Graph-CSPNet](Graph_CSPNet.png)
 
@@ -45,7 +45,7 @@ Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG 
 [<img src="https://img.shields.io/badge/IEEE-9805775-b31b1b"></img>](https://ieeexplore.ieee.org/document/9805775)
 [<img src="https://img.shields.io/badge/arXiv-2202.02472-b31b1b"></img>](https://arxiv.org/abs/2202.02472)
 
-Tensor-CSPNet is the first geometric deep learning approach for the motor imagery-electroencephalography classification. It exploits the patterns from the time, spatial, and frequency domains sequentially. 
+Tensor-CSPNet is the first geometric deep learning approach for motor imagery-electroencephalography classification. It exploits the patterns from the time, spatial, and frequency domains sequentially. (Has accepted by TNNLS 2022)
 
 ![Illustration of Tensor-CSPNet](Tensor_CSPNet.png)
 
