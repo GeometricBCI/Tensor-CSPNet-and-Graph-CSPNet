@@ -80,13 +80,13 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 3. R. J. Kobler, J.-i. Hirayama, and M. Kawanabe, “Controlling the fréchet variance improves batch normalization on the symmetric positive definite manifold,” in ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing. IEEE, 2022, pp. 3863–3867. (**ICASSP2022**)
 4. R. J. Kobler, J.-i. Hirayama, Q. Zhao, and M. Kawanabe, "SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG," accepted by **NeurIPS2022**. 
 5. Y.-T.Pan, J.-L.Chou, and C.-S.Wei, “Matt:Amanifoldattentionnetwork for eeg decoding,” accpeted by **NeurIPS2022**.
-6. C. Ju and C. Guan, "Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis," arXiv preprint arXiv:2211.02641, 2022, in review.
-7. Daniel Wilson, Robin Tibor Schirrmeister, Lukas Alexander Wilhelm Gemein, Tonio Ball, "Deep Riemannian Networks for EEG Decoding", arXiv preprint arXiv:2212.10426, 2022.
+6. Daniel Wilson, Robin Tibor Schirrmeister, Lukas Alexander Wilhelm Gemein, Tonio Ball, "Deep Riemannian Networks for EEG Decoding", arXiv preprint arXiv:2212.10426, 2022.
 
 #### 2023
 1. C. Ju, R.J. Kobler, & C. Guan, Score-based Data Generation for EEG Spatial Covariance Matrices: Towards Boosting BCI Performance. 2023 45th Annual International Conference of the IEEE Engineering in Medicine & Biology Society, 2023, arXiv preprint arXiv:2302.11410 (**EMBC2023**) 
 2. C. Bonet, B. Malézieux, A. Rakotomamonjy, L. Drumetz, T. Moreau, M. Kowalski, & N. Courty, Sliced-Wasserstein on Symmetric Positive Definite Matrices for M/EEG Signals. arXiv preprint arXiv:2303.05798, 2023, ICML. (**ICML2023**) 
-3. Mostajeran, C., Da Costa, N., Van Goffrier, G., & Sepulchre, R. Differential geometry with extreme eigenvalues in the positive semidefinite cone. arXiv preprint arXiv:2304.07347, 2023, in review. 
+3. Mostajeran, C., Da Costa, N., Van Goffrier, G., & Sepulchre, R. Differential geometry with extreme eigenvalues in the positive semidefinite cone. arXiv preprint arXiv:2304.07347, 2023, in review.
+4. C. Ju and C. Guan, "Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis," arXiv preprint arXiv:2211.02641, 2022, accepted by TNNLS 2023. (**TNNLS2023**)
 
 
 
