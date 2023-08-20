@@ -1,6 +1,6 @@
 This repository includes a Python implementation of Tensor-CSPNet and Graph-CSPNet, which are two classifiers for motor imagery-electroencephalography (MI-EEG). 
 
-My current academic goal is to further combine the decoding of neural signals with mainstream techniques in theoretical mathematics. Grateful for my background in theoretical mathematics and physics, as well as years of training, I have chosen this path to pay tribute to the contributions of theoretical and applied geometers in the past century. We refer to this category of approaches as the **Geometric MI-BCI Classifier** and aim to continue its development by incorporating additional techniques and perspectives from fields such as differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, and geometric deep learning. What is exciting is that these classifiers have indeed performed well in this small engineering task. 
+My current academic goal is to further combine the decoding of neural signals with mainstream techniques in theoretical mathematics. Grateful for my background in theoretical mathematics and physics, as well as years of training, I have chosen this path to pay tribute to the contributions of theoretical and applied geometers in the past century. We refer to this category of approaches as the **Geometric Classifier** and aim to continue its development by incorporating additional techniques and perspectives from fields such as differential geometry, information geometry, Riemannian optimization, geometric statistics, geometric control theory, manifold learning, and geometric deep learning. What is exciting is that these classifiers have indeed performed well in this small engineering task. 
 
 
 # Tensor-CSPNet and Graph-CSPNet
@@ -22,30 +22,34 @@ In line with the event-related desynchronization and event-related synchronizati
 
 AIRM<sup>*</sup> stands for Affine Invariant Riemannian Metric. It is the most commonly used metric for SPD manifolds and was also the Riemannian metric first used by Alexandre Barachant in his EEG-BCI classifier. In our implementation, Class BatchNormSPD involves parallel transportation, which requires a specific metric to be determined. LogEig also require a metric, but we have simplified the process that we compute it at identity since SPD manifolds are geodesically complete. Different metrics can have some impact on the results, but the degree of impact is much lower than the impact of different network structures using the same metric. Essentially, no metric is specifically designed for this classification problem, so we choose the most commonly used one.
 
-### Graph-CSPNet
+### Graph-CSPNet (IEEE TNNLS 2023)
 
 [<img src="https://img.shields.io/badge/arXiv-2211.02641-b31b1b"></img>](https://arxiv.org/abs/2211.02641)
 
-Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. (Has accepted by TNNLS 2023)
+Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG signals in both the time and frequency domains. It exploits the time-frequency domain simultaneously, and then in the space domain. 
 
 ![Illustration of Graph-CSPNet](Graph_CSPNet.png)
 
     If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. 
     
         @article{ju2022graph,
-          title={Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis},
           author={Ju, Ce and Guan, Cuntai},
-          journal={arXiv preprint arXiv:2211.02641},
-          year={2022}
+          journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+          title={Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis},
+          year={2023},
+          volume={},
+          number={},
+          pages={1-15},
+          doi={10.1109/TNNLS.2023.3307470}
         }
 
 
-### Tensor-CSPNet
+### Tensor-CSPNet (IEEE TNNLS 2022)
 
 [<img src="https://img.shields.io/badge/IEEE-9805775-b31b1b"></img>](https://ieeexplore.ieee.org/document/9805775)
 [<img src="https://img.shields.io/badge/arXiv-2202.02472-b31b1b"></img>](https://arxiv.org/abs/2202.02472)
 
-Tensor-CSPNet is the first geometric deep learning approach for motor imagery-electroencephalography classification. It exploits the patterns from the time, spatial, and frequency domains sequentially. (Has accepted by TNNLS 2022)
+Tensor-CSPNet is the first geometric deep learning approach for motor imagery-electroencephalography classification. It exploits the patterns from the time, spatial, and frequency domains sequentially. 
 
 ![Illustration of Tensor-CSPNet](Tensor_CSPNet.png)
 
@@ -86,7 +90,7 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 1. C. Ju, R.J. Kobler, & C. Guan, Score-based Data Generation for EEG Spatial Covariance Matrices: Towards Boosting BCI Performance. 2023 45th Annual International Conference of the IEEE Engineering in Medicine & Biology Society, 2023, arXiv preprint arXiv:2302.11410 (**EMBC2023**) 
 2. C. Bonet, B. Malézieux, A. Rakotomamonjy, L. Drumetz, T. Moreau, M. Kowalski, & N. Courty, Sliced-Wasserstein on Symmetric Positive Definite Matrices for M/EEG Signals. arXiv preprint arXiv:2303.05798, 2023, ICML. (**ICML2023**) 
 3. Mostajeran, C., Da Costa, N., Van Goffrier, G., & Sepulchre, R. Differential geometry with extreme eigenvalues in the positive semidefinite cone. arXiv preprint arXiv:2304.07347, 2023, in review.
-4. C. Ju and C. Guan, "Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis," arXiv preprint arXiv:2211.02641, 2022, accepted by TNNLS 2023. (**TNNLS2023**)
+4. C. Ju and C. Guan, "Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis," IEEE Transactions on Neural Networks and Learning Systems, 2023, pp. 1–15, doi: 10.1109/TNNLS.2023.3307470. (**TNNLS2023**)
 
 
 
