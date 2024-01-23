@@ -92,7 +92,7 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 2. C. Bonet, B. Malézieux, A. Rakotomamonjy, L. Drumetz, T. Moreau, M. Kowalski, & N. Courty, Sliced-Wasserstein on Symmetric Positive Definite Matrices for M/EEG Signals. arXiv preprint arXiv:2303.05798, 2023, ICML. (**ICML2023**) 
 3. C. Ju and C. Guan, "Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis," IEEE Transactions on Neural Networks and Learning Systems, 2023, pp. 1–15, doi: 10.1109/TNNLS.2023.3307470. (**TNNLS2023**)
 #### 2024
-1. Ce Ju, Reinmar Josef Kobler, Liyao Tang, Cuntai Guan, and Motoaki Kawanabe, Deep Geodesic Canonical Correlation Analysis for Covariance-Based Neuroimaging Data, 2024. (ICLR 2024, Spotlight)
+1. Ce Ju, Reinmar Josef Kobler, Liyao Tang, Cuntai Guan, and Motoaki Kawanabe, Deep Geodesic Canonical Correlation Analysis for Covariance-Based Neuroimaging Data, 2024. **ICLR 2024, Spotlight**
 
 
 ### Related Repositories
