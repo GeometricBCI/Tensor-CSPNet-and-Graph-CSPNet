@@ -57,15 +57,15 @@ Tensor-CSPNet is the first geometric deep learning approach for motor imagery-el
 If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in references and cite. 
         
         @ARTICLE{9805775,
-            author={Ju, Ce and Guan, Cuntai},
-            journal={IEEE Transactions on Neural Networks and Learning Systems}, 
-            title={Tensor-CSPNet: A Novel Geometric Deep Learning Framework for Motor Imagery Classification}, 
-            year={2022},
-            volume={},
-            number={},
-            pages={1-15},
-            doi={10.1109/TNNLS.2022.3172108}
-          }
+          author={Ju, Ce and Guan, Cuntai},
+          journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+          title={Tensor-CSPNet: A Novel Geometric Deep Learning Framework for Motor Imagery Classification}, 
+          year={2023},
+          volume={34},
+          number={12},
+          pages={10955-10969},
+          doi={10.1109/TNNLS.2022.3172108}
+        }
           
 
 ### Timeline of Related Works
@@ -90,9 +90,9 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 #### 2023
 1. C. Ju, R.J. Kobler, & C. Guan, Score-based Data Generation for EEG Spatial Covariance Matrices: Towards Boosting BCI Performance. 2023 45th Annual International Conference of the IEEE Engineering in Medicine & Biology Society, 2023, arXiv preprint arXiv:2302.11410 (**EMBC2023**) 
 2. C. Bonet, B. Malézieux, A. Rakotomamonjy, L. Drumetz, T. Moreau, M. Kowalski, & N. Courty, Sliced-Wasserstein on Symmetric Positive Definite Matrices for M/EEG Signals. arXiv preprint arXiv:2303.05798, 2023, ICML. (**ICML2023**) 
-3. Mostajeran, C., Da Costa, N., Van Goffrier, G., & Sepulchre, R. Differential geometry with extreme eigenvalues in the positive semidefinite cone. arXiv preprint arXiv:2304.07347, 2023, in review.
-4. C. Ju and C. Guan, "Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis," IEEE Transactions on Neural Networks and Learning Systems, 2023, pp. 1–15, doi: 10.1109/TNNLS.2023.3307470. (**TNNLS2023**)
-
+3. C. Ju and C. Guan, "Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis," IEEE Transactions on Neural Networks and Learning Systems, 2023, pp. 1–15, doi: 10.1109/TNNLS.2023.3307470. (**TNNLS2023**)
+#### 2024
+1. Ce Ju, Reinmar Josef Kobler, Liyao Tang, Cuntai Guan, and Motoaki Kawanabe, Deep Geodesic Canonical Correlation Analysis for Covariance-Based Neuroimaging Data, 2024. (ICLR 2024, Spotlight)
 
 
 ### Related Repositories
