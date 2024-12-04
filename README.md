@@ -37,10 +37,10 @@ Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG 
           author={Ju, Ce and Guan, Cuntai},
           journal={IEEE Transactions on Neural Networks and Learning Systems}, 
           title={Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis},
-          year={2023},
-          volume={},
-          number={},
-          pages={1-15},
+          year={2024},
+          volume={35},
+          number={12},
+          pages={17701-17715},
           doi={10.1109/TNNLS.2023.3307470}
         }
 
