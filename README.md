@@ -85,7 +85,7 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 3. R. J. Kobler, J.-i. Hirayama, and M. Kawanabe, “Controlling the fréchet variance improves batch normalization on the symmetric positive definite manifold,” in ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing. IEEE, 2022, pp. 3863–3867. (**ICASSP 2022**)
 4. R. J. Kobler, J.-i. Hirayama, Q. Zhao, and M. Kawanabe, "SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG," accepted by **NeurIPS 2022**. 
 5. Y.-T.Pan, J.-L.Chou, and C.-S.Wei, “Matt:Amanifoldattentionnetwork for eeg decoding,” accpeted by **NeurIPS 2022**.
-6. Daniel Wilson, Robin Tibor Schirrmeister, Lukas Alexander Wilhelm Gemein, Tonio Ball, "Deep Riemannian Networks for EEG Decoding", Imaging Neuroscience, 2025.
+6. Daniel Wilson, Robin Tibor Schirrmeister, Lukas Alexander Wilhelm Gemein, Tonio Ball, "Deep Riemannian Networks for EEG Decoding", **Imaging Neuroscience**, 2025.
 
 #### 2023
 1. C. Ju, R.J. Kobler, & C. Guan, Score-based Data Generation for EEG Spatial Covariance Matrices: Towards Boosting BCI Performance. 2023 45th Annual International Conference of the IEEE Engineering in Medicine & Biology Society, 2023, arXiv preprint arXiv:2302.11410 (**EMBC 2023**) 
