@@ -145,7 +145,7 @@ class Graph_BiMap(nn.Module):
 
     def _bimap_multiplication(self, X):
 
-        batch_size, channels_in, n_in, _ = X.shape
+        batch_size, _, _, _ = X.shape
 
         P = th.zeros(batch_size, self._h, self._no, self._no, dtype = X.dtype, device = X.device)
 
@@ -155,12 +155,14 @@ class Graph_BiMap(nn.Module):
         return P
 
     def forward(self, X):
-        batch_size, channel_num, dim = X.shape[0], X.shape[1], X.shape[-1]
+        batch_size, channel_num, dim, _ = X.shape
 
+        X_convoluted = torch.matmul(self.P, X.reshape((batch_size, channel_num, -1))).reshape(X.shape)
+   
         if self.increase_dim:
-            return self._bimap_multiplication(self.increase_dim(th.matmul(self._P, X.reshape((batch_size, channel_num, -1))).reshape((batch_size, channel_num, dim, dim))))
-        else:
-            return self._bimap_multiplication(th.matmul(self._P, X.reshape((batch_size, channel_num, -1))).reshape((batch_size, channel_num, dim, dim)))
+           X_convoluted = self.increase_dim(X_convoluted)
+        
+        return self._bimap_multiplication(X_convoluted)
 
 
 class BatchNormSPD(nn.Module):
