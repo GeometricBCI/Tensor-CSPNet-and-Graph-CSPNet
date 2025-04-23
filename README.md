@@ -81,11 +81,10 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 1. Suh, Yoon-Je, and Byung Hyung Kim. "Riemannian embedding banks for common spatial patterns with eeg-based spd neural networks." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 35. No. 1. 2021. (**AAAI 2021**)
 #### 2022
 1. C. Ju and C. Guan, “Tensor-cspnet: A novel geometric deep learning framework for motor imagery classification,” IEEE Transactions on Neural Networks and Learning Systems, 2022, pp. 1–15, doi: 10.1109/TNNLS.2022.3172108.(**TNNLS 2022**)
-2. C. Ju and C. Guan, “Deep optimal transport for domain adaptation on spd manifolds,” arXiv preprint arXiv:2201.05745, 2022, in review.
-3. R. J. Kobler, J.-i. Hirayama, and M. Kawanabe, “Controlling the fréchet variance improves batch normalization on the symmetric positive definite manifold,” in ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing. IEEE, 2022, pp. 3863–3867. (**ICASSP 2022**)
-4. R. J. Kobler, J.-i. Hirayama, Q. Zhao, and M. Kawanabe, "SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG," accepted by **NeurIPS 2022**. 
-5. Y.-T.Pan, J.-L.Chou, and C.-S.Wei, “Matt:Amanifoldattentionnetwork for eeg decoding,” accpeted by **NeurIPS 2022**.
-6. Daniel Wilson, Robin Tibor Schirrmeister, Lukas Alexander Wilhelm Gemein, Tonio Ball, "Deep Riemannian Networks for EEG Decoding", **Imaging Neuroscience**, 2025.
+2. R. J. Kobler, J.-i. Hirayama, and M. Kawanabe, “Controlling the fréchet variance improves batch normalization on the symmetric positive definite manifold,” in ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing. IEEE, 2022, pp. 3863–3867. (**ICASSP 2022**)
+3. R. J. Kobler, J.-i. Hirayama, Q. Zhao, and M. Kawanabe, "SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG," accepted by **NeurIPS 2022**. 
+4. Y.-T.Pan, J.-L.Chou, and C.-S.Wei, “Matt:Amanifoldattentionnetwork for eeg decoding,” accpeted by **NeurIPS 2022**.
+5. Daniel Wilson, Robin Tibor Schirrmeister, Lukas Alexander Wilhelm Gemein, Tonio Ball, "Deep Riemannian Networks for EEG Decoding", **Imaging Neuroscience**, 2025.
 
 #### 2023
 1. C. Ju, R.J. Kobler, & C. Guan, Score-based Data Generation for EEG Spatial Covariance Matrices: Towards Boosting BCI Performance. 2023 45th Annual International Conference of the IEEE Engineering in Medicine & Biology Society, 2023, arXiv preprint arXiv:2302.11410 (**EMBC 2023**) 
@@ -93,6 +92,9 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 3. C. Ju and C. Guan, "Graph Neural Networks on SPD Manifolds for Motor Imagery Classification: A Perspective from the Time-Frequency Analysis," IEEE Transactions on Neural Networks and Learning Systems, 2023, pp. 1–15, doi: 10.1109/TNNLS.2023.3307470. (**TNNLS 2023**)
 #### 2024
 1. Ce Ju, Reinmar Josef Kobler, Liyao Tang, Cuntai Guan, and Motoaki Kawanabe, Deep Geodesic Canonical Correlation Analysis for Covariance-Based Neuroimaging Data, the twelfth International Conference on Learning Representations, 2024. (**ICLR 2024, Spotlight**)
+
+#### 2025
+1. C. Ju and C. Guan, “Deep optimal transport for domain adaptation on spd manifolds,” accpeted by **Artificial Intelligence Journal**, 2025.
 
 
 ### Related Repositories
