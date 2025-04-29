@@ -94,8 +94,8 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 1. Ce Ju, Reinmar J. Kobler, Liyao Tang, Cuntai Guan, and Motoaki Kawanabe, Deep Geodesic Canonical Correlation Analysis for Covariance-Based Neuroimaging Data, the twelfth International Conference on Learning Representations, 2024. (**ICLR 2024, Spotlight**)
 
 #### 2025
-1. C. Ju and C. Guan, “Deep optimal transport for domain adaptation on spd manifolds,” accpeted by **Artificial Intelligence Journal**, 2025.
-2. Ce Ju, Reinmar J. Kobler, Antoine Collas, Motoaki Kawanabe, Cuntai Guan, Bertrand Thirion, "SPD Learning for Covariance-Based Neuroimaging Analysis: Perspectives, Methods, and Challenges", https://arxiv.org/abs/2504.18882, 2025.
+1. C. Ju and C. Guan, “Deep optimal transport for domain adaptation on spd manifolds,” accpeted by **Artificial Intelligence**, 2025.
+2. C. Ju, R. J. Kobler, A. Collas, M. Kawanabe, C. Guan, B. Thirion, "SPD Learning for Covariance-Based Neuroimaging Analysis: Perspectives, Methods, and Challenges", https://arxiv.org/abs/2504.18882, 2025.
 
 
 ### Related Repositories
