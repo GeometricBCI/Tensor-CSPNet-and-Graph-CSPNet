@@ -78,12 +78,12 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 #### 2020
 1. C. Ju, D. Gao, R. Mane, B. Tan, Y. Liu and C. Guan, "Federated Transfer Learning for EEG Signal Classification," 2020 42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society, 2020, pp. 3040-3045, doi: 10.1109/EMBC44109.2020.9175344. (**EMBC 2020**)
 #### 2021
-1. Suh, Yoon-Je, and Byung Hyung Kim. "Riemannian embedding banks for common spatial patterns with eeg-based spd neural networks." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 35. No. 1. 2021. (**AAAI 2021**)
+1. Suh, Yoon-Je, and Byung Hyung Kim. "Riemannian embedding banks for common spatial patterns with EEG-based SPD neural networks." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 35. No. 1. 2021. (**AAAI 2021**)
 #### 2022
 1. C. Ju and C. Guan, “Tensor-cspnet: A novel geometric deep learning framework for motor imagery classification,” IEEE Transactions on Neural Networks and Learning Systems, 2022, pp. 1–15, doi: 10.1109/TNNLS.2022.3172108.(**TNNLS 2022**)
 2. R. J. Kobler, J.-i. Hirayama, and M. Kawanabe, “Controlling the fréchet variance improves batch normalization on the symmetric positive definite manifold,” in ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing. IEEE, 2022, pp. 3863–3867. (**ICASSP 2022**)
 3. R. J. Kobler, J.-i. Hirayama, Q. Zhao, and M. Kawanabe, "SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG," accepted by **NeurIPS 2022**. 
-4. Y.-T.Pan, J.-L.Chou, and C.-S.Wei, “Matt:Amanifoldattentionnetwork for eeg decoding,” accpeted by **NeurIPS 2022**.
+4. Y.-T.Pan, J.-L.Chou, and C.-S.Wei, “Matt: A manifold attention network for EEG decoding,” accepted by **NeurIPS 2022**.
 5. Daniel Wilson, Robin Tibor Schirrmeister, Lukas Alexander Wilhelm Gemein, Tonio Ball, "Deep Riemannian Networks for EEG Decoding", **Imaging Neuroscience**, 2025.
 
 #### 2023
@@ -94,8 +94,9 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 1. C. Ju, R. J. Kobler, L. Tang, C. Guan, and M. Kawanabe, Deep Geodesic Canonical Correlation Analysis for Covariance-Based Neuroimaging Data, the twelfth International Conference on Learning Representations, 2024. (**ICLR 2024, Spotlight**)
 
 #### 2025
-1. C. Ju and C. Guan, “Deep optimal transport for domain adaptation on spd manifolds,” accpeted by **Artificial Intelligence**, 2025.
+1. C. Ju and C. Guan, “Deep optimal transport for domain adaptation on SPD manifolds,” accepted by **Artificial Intelligence**, 2025.
 2. C. Ju, R. J. Kobler, A. Collas, M. Kawanabe, C. Guan, and B. Thirion, "SPD Learning for Covariance-Based Neuroimaging Analysis: Perspectives, Methods, and Challenges", https://arxiv.org/abs/2504.18882, 2025.
+3. A. Collas, C. Ju, N. Salvy, & B. Thirion (2025). "Riemannian Flow Matching for Brain Connectivity Matrices via Pullback Geometry," accepted by **NeurIPS 2025**. 
 
 
 ### Related Repositories
@@ -128,9 +129,9 @@ This code has been made available subsequent to the completion of the Graph-CSPN
 
 ### Data Availability
 
-The KU dataset (a.k.a., the OpenBMI dataset) can be downloaded in the following link:
+The KU dataset (a.k.a., the OpenBMI dataset) can be downloaded from the following link:
 [**GIGADB**](http://gigadb.org/dataset/100542)
-with the dataset discription [**EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy**](https://academic.oup.com/gigascience/article/8/5/giz002/5304369); The BCIC-IV-2a dataset can be downloaded in the following link:
+With the dataset description [**EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy**](https://academic.oup.com/gigascience/article/8/5/giz002/5304369); The BCIC-IV-2a dataset can be downloaded in the following link:
 [**BNCI-Horizon-2020**](http://bnci-horizon-2020.eu/database/data-sets)
 with the dataset discription [**BCI Competition 2008 – Graz data set A**](https://www.bbci.de/competition/iv/desc_2a.pdf) and the introduction to [**the BCI competition**](https://www.bbci.de/competition/iv/).
 All of this data can be accessed through the [**MOABB**](https://github.com/NeuroTechX/moabb). This package includes a benchmark dataset for advanced decoding algorithms, which comprises 12 open-access datasets and covers over 250 subjects.
