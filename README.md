@@ -31,7 +31,7 @@ Graph-CSPNet uses graph-based techniques to simultaneously characterize the EEG 
 
 ![Illustration of Graph-CSPNet](Graph_CSPNet.png)
 
-    If you want to cite Graph-CSPNet, please kindly add this bibtex entry in references and cite. 
+    If you want to cite Graph-CSPNet, please kindly add this Bibtex entry to the references and cite. 
     
         @article{ju2022graph,
           author={Ju, Ce and Guan, Cuntai},
@@ -54,7 +54,7 @@ Tensor-CSPNet is the first geometric deep learning approach for motor imagery-el
 
 ![Illustration of Tensor-CSPNet](Tensor_CSPNet.png)
 
-If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in references and cite. 
+If you want to cite Tensor-CSPNet, please kindly add this Bibtex entry to the references and cite. 
         
         @ARTICLE{9805775,
           author={Ju, Ce and Guan, Cuntai},
@@ -72,11 +72,11 @@ If you want to cite Tensor-CSPNet, please kindly add this bibtex entry in refere
 
 #### Before 2020
 
-Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the second-order statistics of EEG signals. In contrast to the utilization of first-order statistics, the use of second-order statistics is a classical treatment in MI-EEG classification. The discriminative information present in these second-order statistics is considered sufficient for effective classification. These classifiers are based on the Riemannian geometry perspective in BCIs that has been developed over the past decade by prominent researchers such as Alexandre Barachant, Marco Congedo, Christian Jutten, Florian Yger, among others. Tensor-CSPNet and Graph-CSPNet leverage modern second-order neural networks on SPD manifolds that were developed by Zhiwu Huang, Luc Van Gool, Daniel Brooks, Olivier Schwander, Frederic Barbaresco, and others. We extend our sincere gratitude to these pioneers for their remarkable contributions in the development of the fundamental tools and contributing perspectives for this path.
+Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the second-order statistics of EEG signals. In contrast to the utilization of first-order statistics, the use of second-order statistics is a classical treatment in MI-EEG classification. The discriminative information present in these second-order statistics is considered sufficient for effective classification. These classifiers are based on the Riemannian geometry perspective in BCIs that has been developed over the past decade by prominent researchers such as Alexandre Barachant, Marco Congedo, Christian Jutten, Sylvain Chevallier, and Florian Yger, among others. Tensor-CSPNet and Graph-CSPNet leverage modern second-order neural networks on SPD manifolds that were developed by Zhiwu Huang, Luc Van Gool, Daniel Brooks, Olivier Schwander, Frederic Barbaresco, and others. We extend our sincere gratitude to these pioneers for their remarkable contributions in the development of the fundamental tools and contributing perspectives for this path.
 
 
 #### 2020
-1. C. Ju, D. Gao, R. Mane, B. Tan, Y. Liu and C. Guan, "Federated Transfer Learning for EEG Signal Classification," 2020 42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society, 2020, pp. 3040-3045, doi: 10.1109/EMBC44109.2020.9175344. (**EMBC 2020**)
+1. C. Ju, D. Gao, R. Mane, B. Tan, Y. Liu, and C. Guan, "Federated Transfer Learning for EEG Signal Classification," 2020 42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society, 2020, pp. 3040-3045, doi: 10.1109/EMBC44109.2020.9175344. (**EMBC 2020**)
 #### 2021
 1. Suh, Yoon-Je, and Byung Hyung Kim. "Riemannian embedding banks for common spatial patterns with EEG-based SPD neural networks." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 35. No. 1. 2021. (**AAAI 2021**)
 #### 2022
@@ -95,8 +95,10 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 
 #### 2025
 1. C. Ju and C. Guan, “Deep optimal transport for domain adaptation on SPD manifolds,” accepted by **Artificial Intelligence**, 2025.
-2. C. Ju, R. J. Kobler, A. Collas, M. Kawanabe, C. Guan, and B. Thirion, "SPD Learning for Covariance-Based Neuroimaging Analysis: Perspectives, Methods, and Challenges", https://arxiv.org/abs/2504.18882, 2025.
-3. A. Collas, C. Ju, N. Salvy, & B. Thirion (2025). "Riemannian Flow Matching for Brain Connectivity Matrices via Pullback Geometry," accepted by **NeurIPS 2025**. 
+2. C. Ju, R. Kobler, A. Collas, M. Kawanabe, C. Guan, and B. Thirion, "SPD Matrix Learning for Neuroimaging Analysis: Perspectives, Methods, and Challenges", https://arxiv.org/abs/2504.18882, 2025.
+3. A. Collas, C. Ju, N. Salvy, & B. Thirion (2025). "Riemannian Flow Matching for Brain Connectivity Matrices via Pullback Geometry," accepted by **NeurIPS 2025**.
+
+No more updates...
 
 
 ### Related Repositories
@@ -116,13 +118,13 @@ The Tensor-CSPNet and Graph-CSPNet models are included in the `/utils/model` dir
 
 Note that with the provided network architecture and training parameters in the folder, Tensor-CSPNet and Graph-CSPNet achieved approximately 76% accuracy on the CV scenario and 72% accuracy on the holdout scenario for the BCIC-IV-2a dataset, and approximately 73% accuracy on the CV scenario and 69% accuracy on the holdout scenario for the KU dataset on my local computer. These results represent the best performance after several runs, although some randomness may be present due to various computational issues. Overall, the classification performance of Tensor-CSPNet and Graph-CSPNet is near-optimal on the given scenarios. To achieve better performance, users are encouraged to try different hyperparameter combinations, network architectures, and training strategies.
 
-Both Tensor-CSPNet and Graph-CSPNet use matrix backpropagation to update weights in each layer, which runs slightly slower than typical methods, but 50 epochs per run generally yields relatively good performance. For other MI-BCI datasets, it is recommended to develop a novel segmentation plan that characterizes the region of interest associated with the task. Users can modify the related classes in `/utils/load_data` accordingly. Several tips for training that may be helpful (or not) include: setting the initial learning rate to 1e-3; choosing a reasonably sized batch for training; running each epoch for at least 50 iterations in either scenario, and avoiding early stopping before 50 epochs. This is because EEG signals typically have high signal-to-noise ratios, and noise can force early stopping before patterns have been learned. In some cases, the validation process can be disabled to increase the number of trials for training in the CV scenario.
+Both Tensor-CSPNet and Graph-CSPNet use matrix backpropagation to update weights in each layer, which runs slightly slower than typical methods, but 50 epochs per run generally yields relatively good performance. For other MI-BCI datasets, it is recommended to develop a novel segmentation plan that characterizes the region of interest associated with the task. Users can modify the related classes in `/utils/load_data` accordingly. Several tips for training that may be helpful (or not) include: setting the initial learning rate to 1e-3; choosing a reasonably sized batch for training; running each epoch for at least 50 iterations in either scenario; and avoiding early stopping before 50 epochs. This is because EEG signals typically have high signal-to-noise ratios, and noise can force early stopping before patterns have been learned. In some cases, the validation process can be disabled to increase the number of trials for training in the CV scenario.
 
 In particular, we recommend applying shrinkage regularization to the input matrices. Shrinkage regularization is a method used to estimate a positive definite matrix, which is a matrix that is symmetric and has all positive eigenvalues. This method is particularly useful when the number of observations is small relative to the number of variables, as this can lead to an unstable estimate of the SPD matrix.
 
-We provide two optimizers in this folder: Class MixOptimizer in `/utils/functional`, and the geoopt package. In my implementation, initializing parameters from the BiMap layer with nn.Parameter and parameters from Riemannian Batch Normalization with geoopt has yielded the best classification performance. However, this may not always be the best approach for other tasks.
+We provide two optimizers in this folder: Class MixOptimizer in `/utils/functional`, and the geoopt package. In my implementation, initializing parameters from the BiMap layer with nn.Parameter and parameters from Riemannian Batch Normalization with geoopt have yielded the best classification performance. However, this may not always be the best approach for other tasks.
 
-This code has been made available subsequent to the completion of the Graph-CSPNet paper. A few modifications have been introduced to the functional functions following the completion of the Tensor-CSPNet paper. To replicate the results presented in Table IV of the Graph-CSPNet paper, kindly adhere to the hyperparameters outlined in the same paper. The provided code corresponds to the particular hyperparameters detailed in the Graph-CSPNet paper.
+This code has been made available after the completion of the Graph-CSPNet paper. A few modifications have been introduced to the functions following the completion of the Tensor-CSPNet paper. To replicate the results presented in Table IV of the Graph-CSPNet paper, kindly adhere to the hyperparameters outlined in the same paper. The provided code corresponds to the particular hyperparameters detailed in the Graph-CSPNet paper.
 
 
 
@@ -131,7 +133,7 @@ This code has been made available subsequent to the completion of the Graph-CSPN
 
 The KU dataset (a.k.a., the OpenBMI dataset) can be downloaded from the following link:
 [**GIGADB**](http://gigadb.org/dataset/100542)
-With the dataset description [**EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy**](https://academic.oup.com/gigascience/article/8/5/giz002/5304369); The BCIC-IV-2a dataset can be downloaded in the following link:
+With the dataset description [**EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy**](https://academic.oup.com/gigascience/article/8/5/giz002/5304369), the BCIC-IV-2a dataset can be downloaded from the following link:
 [**BNCI-Horizon-2020**](http://bnci-horizon-2020.eu/database/data-sets)
 with the dataset discription [**BCI Competition 2008 – Graz data set A**](https://www.bbci.de/competition/iv/desc_2a.pdf) and the introduction to [**the BCI competition**](https://www.bbci.de/competition/iv/).
 All of this data can be accessed through the [**MOABB**](https://github.com/NeuroTechX/moabb). This package includes a benchmark dataset for advanced decoding algorithms, which comprises 12 open-access datasets and covers over 250 subjects.
