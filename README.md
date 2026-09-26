@@ -95,8 +95,10 @@ Tensor-CSPNet and Graph-CSPNet are deep learning classifiers that operate on the
 
 #### 2025
 1. C. Ju and C. Guan, “Deep optimal transport for domain adaptation on SPD manifolds,” accepted by **Artificial Intelligence**, 2025.
-2. C. Ju, R. Kobler, A. Collas, M. Kawanabe, C. Guan, and B. Thirion, "SPD Matrix Learning for Neuroimaging Analysis: Perspectives, Methods, and Challenges", https://arxiv.org/abs/2504.18882, 2025.
-3. A. Collas, C. Ju, N. Salvy, & B. Thirion (2025). "Riemannian Flow Matching for Brain Connectivity Matrices via Pullback Geometry," accepted by **NeurIPS 2025**.
+2. A. Collas, C. Ju, N. Salvy, & B. Thirion (2025). "Riemannian Flow Matching for Brain Connectivity Matrices via Pullback Geometry," accepted by **NeurIPS 2025**.
+
+#### 2026
+1. C. Ju, R. Kobler, A. Collas, M. Kawanabe, C. Guan, and B. Thirion, "SPD Matrix Learning for Neuroimaging Analysis: Perspectives, Methods, and Challenges", **TPAMI**, 2026.
 
 No more updates...
 
